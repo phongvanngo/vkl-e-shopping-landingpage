@@ -8,9 +8,6 @@ export default function TopCategorySlider() {
   const dispatch = useDispatch();
   const listCategory = useSelector((state) => state.category.listCategory);
   console.log(listCategory);
-  useEffect(() => {
-    dispatch(fetchListCategory({}));
-  }, []);
 
   function CategoryCarousel() {
     useEffect(() => {

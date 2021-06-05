@@ -8,11 +8,15 @@ import BrandCarousel from "../element/brand-slider-carousel";
 import TestimonialCarousel from "../element/testimonial-carousel";
 import SlideShow from "./component/homepage.slideshow";
 import TopCategorySlider from "./component/homepage.topCategorySlider";
+import { useDispatch } from "react-redux";
+import { fetchListCategory } from "../app/redux/categorySlice";
 
 export default function Index() {
+  const dispatch = useDispatch();
   useEffect(() => {
     window.sliderr();
     window.commonjs();
+    dispatch(fetchListCategory({}));
   }, []);
   return (
     <>
