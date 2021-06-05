@@ -1,43 +1,47 @@
 export const listCategories = JSON.parse(`
 [{
     "id": 1,
-    "name": "FRUITS",
-    "image": " "
+    "name": "TRÁI CÂY",
+    "image": "https://i.imgur.com/2Ifh9Z3.jpg"
   }, {
     "id": 2,
-    "name": "VEGETABLES",
-    "image": " "
+    "name": "RAU SẠCH",
+    "image": "https://i.imgur.com/FrkDhTs.jpg"
   }, {
     "id": 3,
-    "name": "FLOWERS",
-    "image": " "
+    "name": "RAU CỦ",
+    "image": "https://i.imgur.com/VFRfN5a.jpg "
   }, {
     "id": 4,
-    "name": "JUICES",
-    "image": " "
+    "name": "LƯƠNG THỰC",
+    "image": "https://i.imgur.com/7EzbIhR.jpg"
+  }, {
+    "id": 4,
+    "name": "NƯỚC ÉP",
+    "image": "https://i.imgur.com/IE8wAyI.jpg"
   }, {
     "id": 5,
-    "name": "MEATS",
-    "image": " "
+    "name": "THỊT HỮU CƠ",
+    "image": "https://i.imgur.com/QmlehLp.jpg"
   }, {
     "id": 6,
-    "name": "FISHES",
-    "image": " "
+    "name": "CÁC LOẠI CÁ",
+    "image": "https://i.imgur.com/O2NGeZv.jpg"
   }, {
     "id": 7,
-    "name": "MILKS",
-    "image": " "
+    "name": "SỮA",
+    "image": "https://i.imgur.com/z60ZZ3I.jpg"
   }, {
     "id": 8,
-    "name": "CEREALS",
-    "image": " "
+    "name": "NGŨ CỐC",
+    "image": "https://i.imgur.com/wwUQWXn.jpg"
   }, {
     "id": 9,
-    "name": "RICES",
-    "image": ""
+    "name": "GẠO",
+    "image": "https://i.imgur.com/NGdcCJy.jpg"
   }, {
     "id": 10,
-    "name": "COMBO",
+    "name": "QUÀ TẶNG",
     "image": " "
   }]
 `);
