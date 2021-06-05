@@ -216,7 +216,7 @@ html {
   padding-left: 15px;
   font-size: 14px;
   letter-spacing: 0.5px;
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight:500
 }
 .mobile-menu li a.active {
@@ -243,7 +243,7 @@ html {
 #mobile-menu .top-links {
     display:block;
     width: 100%;
-	font-family: 'Rubik', sans-serif;
+	font-family: 'Inter', sans-serif;
 	border-top:1px #eaeaea solid;
 	overflow: hidden;
 	padding-top:8px

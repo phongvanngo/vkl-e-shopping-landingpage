@@ -55,12 +55,12 @@ class Header extends Component {
                         <li>
                           {" "}
                           <Link className="level-top" to={"/"}>
-                            <span>Home</span>
+                            <span>TRANG CHỦ</span>
                           </Link>
                         </li>
                         <li className="level0 parent drop-menu">
                           <Link to={" "}>
-                            <span>Products</span>{" "}
+                            <span>SẢN PHẨM</span>{" "}
                           </Link>
                           {/* <!--sub sub category--> */}
                           <ul className="level1">
@@ -165,7 +165,7 @@ class Header extends Component {
 
                         <li className="level0 parent drop-menu">
                           <Link to={" "}>
-                            <span>Stores</span>{" "}
+                            <span>CỬA HÀNG</span>{" "}
                           </Link>
                           {/* <!--sub sub category--> */}
                           <ul className="level1">
@@ -271,13 +271,13 @@ class Header extends Component {
                         <li>
                           {" "}
                           <Link className="level-top" to={"/"}>
-                            <span>About us</span>
+                            <span>VỀ CHÚNG TÔI</span>
                           </Link>
                         </li>
                         <li>
                           {" "}
                           <Link className="level-top" to={"/"}>
-                            <span>Contact</span>
+                            <span>LIÊN HỆ</span>
                           </Link>
                         </li>
                       </ul>
