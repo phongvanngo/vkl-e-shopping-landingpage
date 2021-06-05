@@ -59,7 +59,10 @@ class Grid extends Component {
                 <div className="pro-coloumn">
                   <div className="category-description std">
                     <div className="slider-items-products">
-                      <div id="category-desc-slider" className="product-flexslider hidden-buttons">
+                      <div
+                        id="category-desc-slider"
+                        className="product-flexslider hidden-buttons"
+                      >
                         <div className="slider-items slider-width-col1 owl-carousel owl-theme">
                           {/* <!-- Item --> */}
                           <div className="item">
@@ -103,10 +106,17 @@ class Grid extends Component {
                       <div className="sorter">
                         <div className="view-mode">
                           {" "}
-                          <span title="Grid" className="button button-active button-grid">
+                          <span
+                            title="Grid"
+                            className="button button-active button-grid"
+                          >
                             &nbsp;
                           </span>
-                          <Link to={"/list"} title="List" className="button-list">
+                          <Link
+                            to={"/list"}
+                            title="List"
+                            className="button-list"
+                          >
                             &nbsp;
                           </Link>{" "}
                         </div>
@@ -131,7 +141,11 @@ class Grid extends Component {
                             </ul>
                           </li>
                         </ul>
-                        <Link className="button-asc left" to={" "} title="Set Descending Direction">
+                        <Link
+                          className="button-asc left"
+                          to={" "}
+                          title="Set Descending Direction"
+                        >
                           <span className="top_arrow"></span>
                         </Link>
                       </div>
@@ -205,7 +219,10 @@ class Grid extends Component {
                                 <div className="item-box-hover">
                                   <div className="box-inner">
                                     <div className="product-detail-bnt">
-                                      <Link to={" "} className="button detail-bnt">
+                                      <Link
+                                        to={" "}
+                                        className="button detail-bnt"
+                                      >
                                         <span>Quick View</span>
                                       </Link>
                                     </div>
@@ -231,7 +248,10 @@ class Grid extends Component {
                                 </div>
                               </div>
                               <div className="add_cart">
-                                <button className="button btn-cart" type="button">
+                                <button
+                                  className="button btn-cart"
+                                  type="button"
+                                >
                                   <span>Add to Cart</span>
                                 </button>
                               </div>
@@ -250,11 +270,16 @@ class Grid extends Component {
                                   <div className="rating">
                                     <div className="ratings">
                                       <div className="rating-box">
-                                        <div className="rating" style={{ width: "80%" }}></div>
+                                        <div
+                                          className="rating"
+                                          style={{ width: "80%" }}
+                                        ></div>
                                       </div>
                                       <p className="rating-links">
                                         <Link to={" "}>1 Review(s)</Link>
-                                        <span className="separator">|</span>{" "}
+                                        <span className="separator">
+                                          |
+                                        </span>{" "}
                                         <Link to={" "}>Add Review</Link>{" "}
                                       </p>
                                     </div>
@@ -285,11 +310,16 @@ class Grid extends Component {
                                     alt="Fresh Organic Mustard Leaves "
                                   />
                                 </Link>
-                                <div className="new-label new-top-left">New</div>
+                                <div className="new-label new-top-left">
+                                  New
+                                </div>
                                 <div className="item-box-hover">
                                   <div className="box-inner">
                                     <div className="product-detail-bnt">
-                                      <Link to={" "} className="button detail-bnt">
+                                      <Link
+                                        to={" "}
+                                        className="button detail-bnt"
+                                      >
                                         <span>Quick View</span>
                                       </Link>
                                     </div>
@@ -315,7 +345,10 @@ class Grid extends Component {
                                 </div>
                               </div>
                               <div className="add_cart">
-                                <button className="button btn-cart" type="button">
+                                <button
+                                  className="button btn-cart"
+                                  type="button"
+                                >
                                   <span>Add to Cart</span>
                                 </button>
                               </div>
@@ -334,11 +367,16 @@ class Grid extends Component {
                                   <div className="rating">
                                     <div className="ratings">
                                       <div className="rating-box">
-                                        <div className="rating" style={{ width: "80%" }}></div>
+                                        <div
+                                          className="rating"
+                                          style={{ width: "80%" }}
+                                        ></div>
                                       </div>
                                       <p className="rating-links">
                                         <Link to={" "}>1 Review(s)</Link>
-                                        <span className="separator">|</span>{" "}
+                                        <span className="separator">
+                                          |
+                                        </span>{" "}
                                         <Link to={" "}>Add Review</Link>{" "}
                                       </p>
                                     </div>
@@ -369,11 +407,16 @@ class Grid extends Component {
                                     alt="Fresh Organic Mustard Leaves "
                                   />
                                 </Link>
-                                <div className="sale-label sale-top-right">Sale</div>
+                                <div className="sale-label sale-top-right">
+                                  Sale
+                                </div>
                                 <div className="item-box-hover">
                                   <div className="box-inner">
                                     <div className="product-detail-bnt">
-                                      <Link to={" "} className="button detail-bnt">
+                                      <Link
+                                        to={" "}
+                                        className="button detail-bnt"
+                                      >
                                         <span>Quick View</span>
                                       </Link>
                                     </div>
@@ -399,7 +442,10 @@ class Grid extends Component {
                                 </div>
                               </div>
                               <div className="add_cart">
-                                <button className="button btn-cart" type="button">
+                                <button
+                                  className="button btn-cart"
+                                  type="button"
+                                >
                                   <span>Add to Cart</span>
                                 </button>
                               </div>
@@ -418,11 +464,16 @@ class Grid extends Component {
                                   <div className="rating">
                                     <div className="ratings">
                                       <div className="rating-box">
-                                        <div className="rating" style={{ width: "80%" }}></div>
+                                        <div
+                                          className="rating"
+                                          style={{ width: "80%" }}
+                                        ></div>
                                       </div>
                                       <p className="rating-links">
                                         <Link to={" "}>1 Review(s)</Link>
-                                        <span className="separator">|</span>{" "}
+                                        <span className="separator">
+                                          |
+                                        </span>{" "}
                                         <Link to={" "}>Add Review</Link>{" "}
                                       </p>
                                     </div>
@@ -456,7 +507,10 @@ class Grid extends Component {
                                 <div className="item-box-hover">
                                   <div className="box-inner">
                                     <div className="product-detail-bnt">
-                                      <Link to={" "} className="button detail-bnt">
+                                      <Link
+                                        to={" "}
+                                        className="button detail-bnt"
+                                      >
                                         <span>Quick View</span>
                                       </Link>
                                     </div>
@@ -482,7 +536,10 @@ class Grid extends Component {
                                 </div>
                               </div>
                               <div className="add_cart">
-                                <button className="button btn-cart" type="button">
+                                <button
+                                  className="button btn-cart"
+                                  type="button"
+                                >
                                   <span>Add to Cart</span>
                                 </button>
                               </div>
@@ -501,11 +558,16 @@ class Grid extends Component {
                                   <div className="rating">
                                     <div className="ratings">
                                       <div className="rating-box">
-                                        <div className="rating" style={{ width: "80%" }}></div>
+                                        <div
+                                          className="rating"
+                                          style={{ width: "80%" }}
+                                        ></div>
                                       </div>
                                       <p className="rating-links">
                                         <Link to={" "}>1 Review(s)</Link>
-                                        <span className="separator">|</span>{" "}
+                                        <span className="separator">
+                                          |
+                                        </span>{" "}
                                         <Link to={" "}>Add Review</Link>{" "}
                                       </p>
                                     </div>
@@ -539,7 +601,10 @@ class Grid extends Component {
                                 <div className="item-box-hover">
                                   <div className="box-inner">
                                     <div className="product-detail-bnt">
-                                      <Link to={" "} className="button detail-bnt">
+                                      <Link
+                                        to={" "}
+                                        className="button detail-bnt"
+                                      >
                                         <span>Quick View</span>
                                       </Link>
                                     </div>
@@ -565,7 +630,10 @@ class Grid extends Component {
                                 </div>
                               </div>
                               <div className="add_cart">
-                                <button className="button btn-cart" type="button">
+                                <button
+                                  className="button btn-cart"
+                                  type="button"
+                                >
                                   <span>Add to Cart</span>
                                 </button>
                               </div>
@@ -584,11 +652,16 @@ class Grid extends Component {
                                   <div className="rating">
                                     <div className="ratings">
                                       <div className="rating-box">
-                                        <div className="rating" style={{ width: "80%" }}></div>
+                                        <div
+                                          className="rating"
+                                          style={{ width: "80%" }}
+                                        ></div>
                                       </div>
                                       <p className="rating-links">
                                         <Link to={" "}>1 Review(s)</Link>
-                                        <span className="separator">|</span>{" "}
+                                        <span className="separator">
+                                          |
+                                        </span>{" "}
                                         <Link to={" "}>Add Review</Link>{" "}
                                       </p>
                                     </div>
@@ -622,7 +695,10 @@ class Grid extends Component {
                                 <div className="item-box-hover">
                                   <div className="box-inner">
                                     <div className="product-detail-bnt">
-                                      <Link to={" "} className="button detail-bnt">
+                                      <Link
+                                        to={" "}
+                                        className="button detail-bnt"
+                                      >
                                         <span>Quick View</span>
                                       </Link>
                                     </div>
@@ -648,7 +724,10 @@ class Grid extends Component {
                                 </div>
                               </div>
                               <div className="add_cart">
-                                <button className="button btn-cart" type="button">
+                                <button
+                                  className="button btn-cart"
+                                  type="button"
+                                >
                                   <span>Add to Cart</span>
                                 </button>
                               </div>
@@ -667,11 +746,16 @@ class Grid extends Component {
                                   <div className="rating">
                                     <div className="ratings">
                                       <div className="rating-box">
-                                        <div className="rating" style={{ width: "80%" }}></div>
+                                        <div
+                                          className="rating"
+                                          style={{ width: "80%" }}
+                                        ></div>
                                       </div>
                                       <p className="rating-links">
                                         <Link to={" "}>1 Review(s)</Link>
-                                        <span className="separator">|</span>{" "}
+                                        <span className="separator">
+                                          |
+                                        </span>{" "}
                                         <Link to={" "}>Add Review</Link>{" "}
                                       </p>
                                     </div>
@@ -705,7 +789,10 @@ class Grid extends Component {
                                 <div className="item-box-hover">
                                   <div className="box-inner">
                                     <div className="product-detail-bnt">
-                                      <Link to={" "} className="button detail-bnt">
+                                      <Link
+                                        to={" "}
+                                        className="button detail-bnt"
+                                      >
                                         <span>Quick View</span>
                                       </Link>
                                     </div>
@@ -731,7 +818,10 @@ class Grid extends Component {
                                 </div>
                               </div>
                               <div className="add_cart">
-                                <button className="button btn-cart" type="button">
+                                <button
+                                  className="button btn-cart"
+                                  type="button"
+                                >
                                   <span>Add to Cart</span>
                                 </button>
                               </div>
@@ -750,11 +840,16 @@ class Grid extends Component {
                                   <div className="rating">
                                     <div className="ratings">
                                       <div className="rating-box">
-                                        <div className="rating" style={{ width: "80%" }}></div>
+                                        <div
+                                          className="rating"
+                                          style={{ width: "80%" }}
+                                        ></div>
                                       </div>
                                       <p className="rating-links">
                                         <Link to={" "}>1 Review(s)</Link>
-                                        <span className="separator">|</span>{" "}
+                                        <span className="separator">
+                                          |
+                                        </span>{" "}
                                         <Link to={" "}>Add Review</Link>{" "}
                                       </p>
                                     </div>
@@ -788,7 +883,10 @@ class Grid extends Component {
                                 <div className="item-box-hover">
                                   <div className="box-inner">
                                     <div className="product-detail-bnt">
-                                      <Link to={" "} className="button detail-bnt">
+                                      <Link
+                                        to={" "}
+                                        className="button detail-bnt"
+                                      >
                                         <span>Quick View</span>
                                       </Link>
                                     </div>
@@ -814,7 +912,10 @@ class Grid extends Component {
                                 </div>
                               </div>
                               <div className="add_cart">
-                                <button className="button btn-cart" type="button">
+                                <button
+                                  className="button btn-cart"
+                                  type="button"
+                                >
                                   <span>Add to Cart</span>
                                 </button>
                               </div>
@@ -833,11 +934,16 @@ class Grid extends Component {
                                   <div className="rating">
                                     <div className="ratings">
                                       <div className="rating-box">
-                                        <div className="rating" style={{ width: "80%" }}></div>
+                                        <div
+                                          className="rating"
+                                          style={{ width: "80%" }}
+                                        ></div>
                                       </div>
                                       <p className="rating-links">
                                         <Link to={" "}>1 Review(s)</Link>
-                                        <span className="separator">|</span>{" "}
+                                        <span className="separator">
+                                          |
+                                        </span>{" "}
                                         <Link to={" "}>Add Review</Link>{" "}
                                       </p>
                                     </div>
@@ -871,7 +977,10 @@ class Grid extends Component {
                                 <div className="item-box-hover">
                                   <div className="box-inner">
                                     <div className="product-detail-bnt">
-                                      <Link to={" "} className="button detail-bnt">
+                                      <Link
+                                        to={" "}
+                                        className="button detail-bnt"
+                                      >
                                         <span>Quick View</span>
                                       </Link>
                                     </div>
@@ -897,7 +1006,10 @@ class Grid extends Component {
                                 </div>
                               </div>
                               <div className="add_cart">
-                                <button className="button btn-cart" type="button">
+                                <button
+                                  className="button btn-cart"
+                                  type="button"
+                                >
                                   <span>Add to Cart</span>
                                 </button>
                               </div>
@@ -916,11 +1028,16 @@ class Grid extends Component {
                                   <div className="rating">
                                     <div className="ratings">
                                       <div className="rating-box">
-                                        <div className="rating" style={{ width: "80%" }}></div>
+                                        <div
+                                          className="rating"
+                                          style={{ width: "80%" }}
+                                        ></div>
                                       </div>
                                       <p className="rating-links">
                                         <Link to={" "}>1 Review(s)</Link>
-                                        <span className="separator">|</span>{" "}
+                                        <span className="separator">
+                                          |
+                                        </span>{" "}
                                         <Link to={" "}>Add Review</Link>{" "}
                                       </p>
                                     </div>
@@ -954,7 +1071,10 @@ class Grid extends Component {
                                 <div className="item-box-hover">
                                   <div className="box-inner">
                                     <div className="product-detail-bnt">
-                                      <Link to={" "} className="button detail-bnt">
+                                      <Link
+                                        to={" "}
+                                        className="button detail-bnt"
+                                      >
                                         <span>Quick View</span>
                                       </Link>
                                     </div>
@@ -980,7 +1100,10 @@ class Grid extends Component {
                                 </div>
                               </div>
                               <div className="add_cart">
-                                <button className="button btn-cart" type="button">
+                                <button
+                                  className="button btn-cart"
+                                  type="button"
+                                >
                                   <span>Add to Cart</span>
                                 </button>
                               </div>
@@ -999,11 +1122,16 @@ class Grid extends Component {
                                   <div className="rating">
                                     <div className="ratings">
                                       <div className="rating-box">
-                                        <div className="rating" style={{ width: "80%" }}></div>
+                                        <div
+                                          className="rating"
+                                          style={{ width: "80%" }}
+                                        ></div>
                                       </div>
                                       <p className="rating-links">
                                         <Link to={" "}>1 Review(s)</Link>
-                                        <span className="separator">|</span>{" "}
+                                        <span className="separator">
+                                          |
+                                        </span>{" "}
                                         <Link to={" "}>Add Review</Link>{" "}
                                       </p>
                                     </div>
@@ -1037,7 +1165,10 @@ class Grid extends Component {
                                 <div className="item-box-hover">
                                   <div className="box-inner">
                                     <div className="product-detail-bnt">
-                                      <Link to={" "} className="button detail-bnt">
+                                      <Link
+                                        to={" "}
+                                        className="button detail-bnt"
+                                      >
                                         <span>Quick View</span>
                                       </Link>
                                     </div>
@@ -1063,7 +1194,10 @@ class Grid extends Component {
                                 </div>
                               </div>
                               <div className="add_cart">
-                                <button className="button btn-cart" type="button">
+                                <button
+                                  className="button btn-cart"
+                                  type="button"
+                                >
                                   <span>Add to Cart</span>
                                 </button>
                               </div>
@@ -1082,11 +1216,16 @@ class Grid extends Component {
                                   <div className="rating">
                                     <div className="ratings">
                                       <div className="rating-box">
-                                        <div className="rating" style={{ width: "80%" }}></div>
+                                        <div
+                                          className="rating"
+                                          style={{ width: "80%" }}
+                                        ></div>
                                       </div>
                                       <p className="rating-links">
                                         <Link to={" "}>1 Review(s)</Link>
-                                        <span className="separator">|</span>{" "}
+                                        <span className="separator">
+                                          |
+                                        </span>{" "}
                                         <Link to={" "}>Add Review</Link>{" "}
                                       </p>
                                     </div>
@@ -1120,7 +1259,10 @@ class Grid extends Component {
                                 <div className="item-box-hover">
                                   <div className="box-inner">
                                     <div className="product-detail-bnt">
-                                      <Link to={" "} className="button detail-bnt">
+                                      <Link
+                                        to={" "}
+                                        className="button detail-bnt"
+                                      >
                                         <span>Quick View</span>
                                       </Link>
                                     </div>
@@ -1146,7 +1288,10 @@ class Grid extends Component {
                                 </div>
                               </div>
                               <div className="add_cart">
-                                <button className="button btn-cart" type="button">
+                                <button
+                                  className="button btn-cart"
+                                  type="button"
+                                >
                                   <span>Add to Cart</span>
                                 </button>
                               </div>
@@ -1165,11 +1310,16 @@ class Grid extends Component {
                                   <div className="rating">
                                     <div className="ratings">
                                       <div className="rating-box">
-                                        <div className="rating" style={{ width: "80%" }}></div>
+                                        <div
+                                          className="rating"
+                                          style={{ width: "80%" }}
+                                        ></div>
                                       </div>
                                       <p className="rating-links">
                                         <Link to={" "}>1 Review(s)</Link>
-                                        <span className="separator">|</span>{" "}
+                                        <span className="separator">
+                                          |
+                                        </span>{" "}
                                         <Link to={" "}>Add Review</Link>{" "}
                                       </p>
                                     </div>
@@ -1459,7 +1609,8 @@ class Grid extends Component {
                       {/* <!--level 0--> */}
                       <li>
                         {" "}
-                        <Link to={"/grid"}>Salads</Link> <span className="subDropdown plus"></span>
+                        <Link to={"/grid"}>Salads</Link>{" "}
+                        <span className="subDropdown plus"></span>
                         <ul className="level0_415">
                           <li>
                             {" "}
@@ -1670,7 +1821,8 @@ class Grid extends Component {
                       {/* <!--level 0--> */}
                       <li>
                         {" "}
-                        <Link to={" "}>Vegetables</Link> <span className="subDropdown plus"></span>
+                        <Link to={" "}>Vegetables</Link>{" "}
+                        <span className="subDropdown plus"></span>
                         <ul className="level0_482">
                           <li>
                             {" "}
@@ -2015,11 +2167,17 @@ class Grid extends Component {
                           <div className="carousel-caption">
                             <h4>Fruit Shop</h4>
                             <h3>
-                              <Link title=" Sample Product" to={"product-details"}>
+                              <Link
+                                title=" Sample Product"
+                                to={"product-details"}
+                              >
                                 Up to 70% Off
                               </Link>
                             </h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <p>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing
+                              elit.
+                            </p>
                             <Link className="link" to={" "}>
                               Buy Now
                             </Link>
@@ -2030,11 +2188,17 @@ class Grid extends Component {
                           <div className="carousel-caption">
                             <h4>Black Grapes</h4>
                             <h3>
-                              <Link title=" Sample Product" to={"product-details"}>
+                              <Link
+                                title=" Sample Product"
+                                to={"product-details"}
+                              >
                                 Mega Sale
                               </Link>
                             </h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <p>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing
+                              elit.
+                            </p>
                             <Link className="link" to={" "}>
                               Buy Now
                             </Link>
@@ -2045,11 +2209,17 @@ class Grid extends Component {
                           <div className="carousel-caption">
                             <h4>Food Farm</h4>
                             <h3>
-                              <Link title=" Sample Product" to={"product-details"}>
+                              <Link
+                                title=" Sample Product"
+                                to={"product-details"}
+                              >
                                 Up to 50% Off
                               </Link>
                             </h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <p>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing
+                              elit.
+                            </p>
                             <Link className="link" to={" "}>
                               Buy Now
                             </Link>
@@ -2057,6 +2227,7 @@ class Grid extends Component {
                         </div>
                       </div>
                       <Link
+                        to="/"
                         className="left carousel-control"
                         href="#carousel-example-generic"
                         data-slide="prev"
@@ -2064,6 +2235,7 @@ class Grid extends Component {
                         <span className="sr-only">Previous</span>{" "}
                       </Link>{" "}
                       <Link
+                        to="/"
                         className="right carousel-control"
                         href="#carousel-example-generic"
                         data-slide="next"
@@ -2093,7 +2265,7 @@ class Grid extends Component {
                         type="button"
                         title="Checkout"
                         className="button button-checkout"
-                        onClick="#"
+                        onClick={() => {}}
                       >
                         <span>Checkout</span>{" "}
                       </button>
@@ -2104,7 +2276,11 @@ class Grid extends Component {
                         <div className="item-inner">
                           {" "}
                           <Link to={" "} className="product-image">
-                            <img src="/assets/img/p1.jpg" width="80" alt="product" />
+                            <img
+                              src="/assets/img/p1.jpg"
+                              width="80"
+                              alt="product"
+                            />
                           </Link>
                           <div className="product-details">
                             <div className="access">
@@ -2112,15 +2288,23 @@ class Grid extends Component {
                               <Link to={" "} className="btn-remove1">
                                 Remove
                               </Link>
-                              <Link href="" title="Edit item" className="btn-edit">
+                              <Link
+                                to=""
+                                href=""
+                                title="Edit item"
+                                className="btn-edit"
+                              >
                                 <i className="icon-pencil"></i>
                                 <span className="hidden">Edit item</span>
                               </Link>{" "}
                             </div>
                             {/* <!--access--> */}
-                            <strong>1</strong> x <span className="price">$299.00</span>
+                            <strong>1</strong> x{" "}
+                            <span className="price">$299.00</span>
                             <p className="product-name">
-                              <Link to={" "}>Fresh Organic Mustard Leaves </Link>
+                              <Link to={" "}>
+                                Fresh Organic Mustard Leaves{" "}
+                              </Link>
                             </p>
                           </div>
                           {/* <!--product-details-bottoms--> */}
@@ -2130,7 +2314,11 @@ class Grid extends Component {
                         <div className="item-inner">
                           {" "}
                           <Link to={" "} className="product-image">
-                            <img src="/assets/img/p2.jpg" width="80" alt="product" />
+                            <img
+                              src="/assets/img/p2.jpg"
+                              width="80"
+                              alt="product"
+                            />
                           </Link>
                           <div className="product-details">
                             <div className="access">
@@ -2138,15 +2326,23 @@ class Grid extends Component {
                               <Link to={" "} className="btn-remove1">
                                 Remove
                               </Link>
-                              <Link href="" title="Edit item" className="btn-edit">
+                              <Link
+                                to=""
+                                href=""
+                                title="Edit item"
+                                className="btn-edit"
+                              >
                                 <i className="icon-pencil"></i>
                                 <span className="hidden">Edit item</span>
                               </Link>{" "}
                             </div>
                             {/* <!--access--> */}
-                            <strong>1</strong> x <span className="price">$299.00</span>
+                            <strong>1</strong> x{" "}
+                            <span className="price">$299.00</span>
                             <p className="product-name">
-                              <Link to={" "}>Fresh Organic Mustard Leaves </Link>
+                              <Link to={" "}>
+                                Fresh Organic Mustard Leaves{" "}
+                              </Link>
                             </p>
                           </div>
                           {/* <!--product-details-bottoms--> */}
@@ -2160,25 +2356,41 @@ class Grid extends Component {
                   <div className="block-content">
                     <ol id="compare-items">
                       <li className="item odd">
-                        <Link to={" "} className="btn-remove1" onClick="#"></Link>
+                        <Link
+                          to={" "}
+                          className="btn-remove1"
+                          onClick={() => {}}
+                        ></Link>
                         <Link className="product-name" to={" "}>
                           Fresh Organic Mustard Leaves{" "}
                         </Link>{" "}
                       </li>
                       <li className="item odd">
-                        <Link to={" "} className="btn-remove1" onClick="#"></Link>
+                        <Link
+                          to={" "}
+                          className="btn-remove1"
+                          onClick={() => {}}
+                        ></Link>
                         <Link className="product-name" to={" "}>
                           Fresh Organic Mustard Leaves{" "}
                         </Link>{" "}
                       </li>
                       <li className="item odd">
-                        <Link to={" "} className="btn-remove1" onClick="#"></Link>
+                        <Link
+                          to={" "}
+                          className="btn-remove1"
+                          onClick={() => {}}
+                        ></Link>
                         <Link className="product-name" to={" "}>
                           Fresh Organic Mustard Leaves{" "}
                         </Link>{" "}
                       </li>
                       <li className="item odd">
-                        <Link to={" "} className="btn-remove1" onClick="#"></Link>
+                        <Link
+                          to={" "}
+                          className="btn-remove1"
+                          onClick={() => {}}
+                        ></Link>
                         <Link className="product-name" to={" "}>
                           Fresh Organic Mustard Leaves{" "}
                         </Link>{" "}
@@ -2190,7 +2402,7 @@ class Grid extends Component {
                         type="button"
                         title="Compare"
                         className="button button-compare"
-                        onClick="#"
+                        onClick={() => {}}
                       >
                         <span>Compare</span>
                       </button>

@@ -54,7 +54,7 @@ class Header extends Component {
                       <ul id="nav" className="hidden-xs">
                         <li>
                           {" "}
-                          <Link className="level-top" to={" "}>
+                          <Link className="level-top" to={"/"}>
                             <span>Home</span>
                           </Link>
                         </li>
