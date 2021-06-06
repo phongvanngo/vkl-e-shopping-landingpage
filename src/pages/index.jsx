@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Header from "../layout/header";
 import Footer from "../layout/footer";
 
-import BestSeller from "../element/best-seller-carousel";
+import BestSeller from "./component/homepage.bestSeller";
 import BrandCarousel from "../element/brand-slider-carousel";
 import TestimonialCarousel from "../element/testimonial-carousel";
 import SlideShow from "./component/homepage.slideshow";
@@ -58,7 +58,7 @@ export default function Index() {
         <section className=" wow bounceInUp animated">
           <div className="best-pro slider-items-products container">
             <div className="new_title">
-              <h2>Best Seller</h2>
+              <h2>Danh sách bán chạy</h2>
               <h4>So you get to know me better</h4>
             </div>
             <BestSeller />
