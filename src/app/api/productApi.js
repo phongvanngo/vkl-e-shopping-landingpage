@@ -16,14 +16,20 @@ const productApi = {
     });
     return response;
   },
-  getListProductByCategory: async (cateogry_id) => {
+  getListProductByCategory: async (category_id) => {
+    let dt = {
+      listProduct: allProducts.filter(
+        (product) => product.category_id === category_id
+      ),
+    };
+    console.log("get list product by cateogry api - payload", category_id, dt);
     let response = await fakeApi({
       // request: loginInfo,
       response: {
         status: 200,
         data: {
           listProduct: allProducts.filter(
-            (product) => product.cateogry_id === cateogry_id
+            (product) => product.category_id === category_id
           ),
         },
       },

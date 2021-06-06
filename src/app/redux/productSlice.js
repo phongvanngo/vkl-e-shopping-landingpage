@@ -43,7 +43,7 @@ export const fetchListProductByCategory = createAsyncThunk(
     const { dispatch } = thunkApi;
     dispatch(startLoading());
     try {
-      const response = await productApi.getListProductByCategory();
+      const response = await productApi.getListProductByCategory(payload);
       console.log(response);
       switch (response.status) {
         case 200:
