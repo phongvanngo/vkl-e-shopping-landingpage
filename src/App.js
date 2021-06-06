@@ -18,11 +18,13 @@ import ContactUs from "./pages/contact-us";
 import Dashboard from "./pages/dashboard";
 import Newsletter from "./pages/newsletter";
 import QuickView from "./pages/quickview";
+import LoadingPage from "./pages/component/loadingPage/loadingPage";
 
 class Markup extends Component {
   render() {
     return (
       <BrowserRouter>
+        <LoadingPage />
         <Switch>
           <Route path="/" exact component={Index} />
           <Route path="/404error" component={Error404} />
