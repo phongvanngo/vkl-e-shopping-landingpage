@@ -29,7 +29,6 @@ export default function ProductDetails() {
     window.zoomimg();
     console.log("product detaild - use effect- info = ", info);
     if (info === null) return;
-    dispatch(fetchListCategory({}));
     dispatch(fetchProductById(info.product_id));
     if (info.category_id === null) {
       dispatch(fetchListProduct({}));

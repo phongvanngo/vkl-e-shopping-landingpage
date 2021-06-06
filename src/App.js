@@ -21,11 +21,13 @@ import QuickView from "./pages/quickview";
 import LoadingPage from "./pages/component/loadingPage/loadingPage";
 import { restoreCart } from "./app/redux/cartSlice";
 import { useDispatch } from "react-redux";
+import { fetchListCategory } from "./app/redux/categorySlice";
 
 export default function App() {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(restoreCart());
+    dispatch(fetchListCategory());
   }, []);
   return (
     <BrowserRouter>

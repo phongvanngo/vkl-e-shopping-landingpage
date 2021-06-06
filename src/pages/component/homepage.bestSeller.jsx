@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { fetchListProductBestSeller } from "../../app/redux/productSlice";
 import queryString from "query-string";
+import { increaseItemToCart } from "../../app/redux/cartSlice";
 
 function numberWithSpaces(x) {
   return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
@@ -80,7 +81,15 @@ export default function BestSeller() {
                         </div>
                       </div>
                       <div className="add_cart">
-                        <button className="button btn-cart" type="button">
+                        <button
+                          onClick={() => {
+                            dispatch(
+                              increaseItemToCart({ product, quantity: 1 })
+                            );
+                          }}
+                          className="button btn-cart"
+                          type="button"
+                        >
                           <span>Thêm vào giỏ hàng</span>
                         </button>
                       </div>

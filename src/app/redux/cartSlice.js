@@ -5,6 +5,7 @@ import { startLoading, stopLoading } from "./loadingSlice";
 
 const initialState = {
   productsInCart: [],
+  totalPrice: 0,
 };
 
 export const orderRequest = createAsyncThunk(
@@ -42,6 +43,11 @@ export const cartSlice = createSlice({
   reducers: {
     restoreCart: (state, action) => {
       state.productsInCart = JSON.parse(localStorage.getItem("cart"));
+      let total = 0;
+      state.productsInCart.forEach(
+        (e) => (total += e.product.price * e.quantity)
+      );
+      state.totalPrice = total;
     },
     increaseItemToCart: (state, action) => {
       let newCart = state.productsInCart;
@@ -56,6 +62,9 @@ export const cartSlice = createSlice({
       }
       state.productsInCart = [...newCart];
       localStorage.setItem("cart", JSON.stringify(state.productsInCart));
+      let total = 0;
+      newCart.forEach((e) => (total += e.product.price * e.quantity));
+      state.totalPrice = total;
     },
     setItemToCart: (state, action) => {
       let newCart = state.productsInCart;
@@ -70,6 +79,9 @@ export const cartSlice = createSlice({
       }
       state.productsInCart = [...newCart];
       localStorage.setItem("cart", JSON.stringify(state.productsInCart));
+      let total = 0;
+      newCart.forEach((e) => (total += e.product.price * e.quantity));
+      state.totalPrice = total;
     },
 
     decreaseItemFromCart: (state, action) => {
@@ -86,6 +98,9 @@ export const cartSlice = createSlice({
       newCart = newCart.filter((element) => element.quantity > 0);
       state.productsInCart = [...newCart];
       localStorage.setItem("cart", JSON.stringify(state.productsInCart));
+      let total = 0;
+      newCart.forEach((e) => (total += e.product.price * e.quantity));
+      state.totalPrice = total;
     },
     removeItemFromCart: (state, action) => {
       let newCart = state.productsInCart;
@@ -93,6 +108,9 @@ export const cartSlice = createSlice({
       newCart = newCart.filter((element) => element.product.id !== productId);
       state.productsInCart = [...newCart];
       localStorage.setItem("cart", JSON.stringify(state.productsInCart));
+      let total = 0;
+      newCart.forEach((e) => (total += e.product.price * e.quantity));
+      state.totalPrice = total;
     },
   },
 

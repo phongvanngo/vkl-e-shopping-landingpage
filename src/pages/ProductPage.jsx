@@ -13,9 +13,7 @@ export default function ProductPage() {
   let { id } = useParams();
   const [currentCategory, setCurrentCategory] = useState({});
   const listCategory = useSelector((state) => state.category.listCategory);
-  useEffect(() => {
-    dispatch(fetchListCategory({}));
-  }, []);
+  useEffect(() => {}, []);
 
   useEffect(() => {
     if (listCategory === null) return;

@@ -7,6 +7,7 @@ import {
   fetchListProduct,
   fetchListProductByCategory,
 } from "../../../app/redux/productSlice";
+import { increaseItemToCart } from "../../../app/redux/cartSlice";
 
 export default function ListProductsComponent({ currentCategory }) {
   const dispatch = useDispatch();
@@ -75,7 +76,13 @@ export default function ListProductsComponent({ currentCategory }) {
                     </div>
                   </div>
                   <div className="add_cart">
-                    <button className="button btn-cart" type="button">
+                    <button
+                      onClick={() => {
+                        dispatch(increaseItemToCart({ product, quantity: 1 }));
+                      }}
+                      className="button btn-cart"
+                      type="button"
+                    >
                       <span>Add to Cart</span>
                     </button>
                   </div>
