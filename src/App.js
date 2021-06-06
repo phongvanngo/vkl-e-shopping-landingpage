@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, useEffect } from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Index from "./pages/index";
 import Error404 from "./pages/404error";
@@ -19,39 +19,41 @@ import Dashboard from "./pages/dashboard";
 import Newsletter from "./pages/newsletter";
 import QuickView from "./pages/quickview";
 import LoadingPage from "./pages/component/loadingPage/loadingPage";
+import { restoreCart } from "./app/redux/cartSlice";
+import { useDispatch } from "react-redux";
 
-class Markup extends Component {
-  render() {
-    return (
-      <BrowserRouter>
-        <LoadingPage />
-        <Switch>
-          <Route path="/" exact component={Index} />
-          <Route path="/404error" component={Error404} />
-          <Route exact path="/product" component={ProductPage} />
-          <Route path="/product/:id" component={ProductPage} />
-          <Route
-            path="/product-details/:productInfo"
-            component={ProductDetails}
-          />
-          <Route path="/about-us" component={About} />
-          <Route path="/blog-detail" component={Blog} />
-          <Route path="/blog" component={BlogDetails} />
-          <Route path="/list" component={List} />
-          <Route path="/login" component={Login} />
-          <Route path="/multiple-addresses" component={MultipleAddresses} />
-          <Route path="/shopping-cart" component={ShoppingCart} />
-          <Route path="/wishlist" component={Wishlist} />
-          <Route path="/checkout-method" component={CheckoutMethod} />
-          <Route path="/checkout" component={Checkout} />
-          <Route path="/contact-us" component={ContactUs} />
-          <Route path="/dashboard" component={Dashboard} />
-          <Route path="/newsletter" component={Newsletter} />
-          <Route path="/quickview" component={QuickView} />
-        </Switch>
-      </BrowserRouter>
-    );
-  }
+export default function App() {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(restoreCart());
+  }, []);
+  return (
+    <BrowserRouter>
+      <LoadingPage />
+      <Switch>
+        <Route path="/" exact component={Index} />
+        <Route path="/404error" component={Error404} />
+        <Route exact path="/product" component={ProductPage} />
+        <Route path="/product/:id" component={ProductPage} />
+        <Route
+          path="/product-details/:productInfo"
+          component={ProductDetails}
+        />
+        <Route path="/about-us" component={About} />
+        <Route path="/blog-detail" component={Blog} />
+        <Route path="/blog" component={BlogDetails} />
+        <Route path="/list" component={List} />
+        <Route path="/login" component={Login} />
+        <Route path="/multiple-addresses" component={MultipleAddresses} />
+        <Route path="/shopping-cart" component={ShoppingCart} />
+        <Route path="/wishlist" component={Wishlist} />
+        <Route path="/checkout-method" component={CheckoutMethod} />
+        <Route path="/checkout" component={Checkout} />
+        <Route path="/contact-us" component={ContactUs} />
+        <Route path="/dashboard" component={Dashboard} />
+        <Route path="/newsletter" component={Newsletter} />
+        <Route path="/quickview" component={QuickView} />
+      </Switch>
+    </BrowserRouter>
+  );
 }
-
-export default Markup;

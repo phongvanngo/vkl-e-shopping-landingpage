@@ -13,6 +13,7 @@ import {
 import ProductPageHeading from "./component/productPage/PageHeading";
 import { numberWithSpaces } from "../app/myLibrary/utilities";
 import RelatedProduct from "./component/productPage/RelatedProduct";
+import AddToBoxComponent from "./component/productPage/productDetail.AddToBox";
 
 export default function ProductDetails() {
   const { productInfo } = useParams();
@@ -48,6 +49,8 @@ export default function ProductDetails() {
   }, [listCategory]);
 
   console.log("product detail - current Product = ", currentProduct);
+
+  const handleAddToCart = () => {};
 
   return (
     <>
@@ -133,45 +136,7 @@ export default function ProductDetails() {
                           </p>
                         </div>
                       </div>
-                      <div className="add-to-box">
-                        <div className="add-to-cart">
-                          <div className="pull-left">
-                            <div className="custom pull-left">
-                              <button
-                                onclick="var result = document.getElementById('qty'); var qty = result.value; if( !isNaN( qty ) &amp;&amp; qty > 0 ) result.value--;return false;"
-                                className="reduced items-count"
-                                type="button"
-                              >
-                                <i className="fa fa-minus">&nbsp;</i>
-                              </button>
-                              <input
-                                type="text"
-                                className="input-text qty"
-                                title="Qty"
-                                value="1"
-                                maxlength="12"
-                                id="qty"
-                                name="qty"
-                              />
-                              <button
-                                onclick="var result = document.getElementById('qty'); var qty = result.value; if( !isNaN( qty )) result.value++;return false;"
-                                className="increase items-count"
-                                type="button"
-                              >
-                                <i className="fa fa-plus">&nbsp;</i>
-                              </button>
-                            </div>
-                          </div>
-                          <button
-                            onclick="productAddToCartForm.submit(this)"
-                            className="button btn-cart"
-                            title="Add to Cart"
-                            type="button"
-                          >
-                            Thêm vào giỏ
-                          </button>
-                        </div>
-                      </div>
+                      <AddToBoxComponent product={currentProduct} />
                       <div className="short-description">
                         <p>{currentProduct?.description}</p>
                       </div>

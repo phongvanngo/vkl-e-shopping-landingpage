@@ -1,0 +1,18 @@
+.edit-quantity-area {
+  display: flex;
+}
+
+.edit-quantity-area .edit-button {
+  border-radius: 30px;
+  margin: 0px 5px;
+  /* text-align: center; */
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  width: 30px;
+  padding-left: 10px;
+  border: none;
+}
+.edit-quantity-area .edit-table:focus {
+  outline: none;
+}

@@ -3,6 +3,7 @@ import loadingReducer from "./loadingSlice";
 import dialogReducer from "./dialogSlice";
 import categoryReducer from "./categorySlice";
 import productReducer from "./productSlice";
+import cartReducer from "./cartSlice";
 
 export const store = configureStore({
   reducer: {
@@ -10,5 +11,6 @@ export const store = configureStore({
     category: categoryReducer,
     dialog: dialogReducer,
     product: productReducer,
+    cart: cartReducer,
   },
 });
