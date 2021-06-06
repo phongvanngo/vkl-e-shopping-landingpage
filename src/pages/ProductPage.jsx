@@ -270,93 +270,7 @@ export default function ProductPage() {
                 listCategories={listCategory || []}
               />
               {/* <!--side-nav-categories--> */}
-              <div className="block block-layered-nav">
-                <div className="block-title"> Shop By </div>
-                <div className="block-content">
-                  <p className="block-subtitle">Shopping Options</p>
-                  <dl id="narrow-by-list">
-                    <dt className="odd">Price</dt>
-                    <dd className="odd">
-                      <ol>
-                        <li>
-                          {" "}
-                          <Link to={" "}>
-                            <span className="price">$0.00</span> -{" "}
-                            <span className="price">$99.99</span>
-                          </Link>{" "}
-                          (6){" "}
-                        </li>
-                        <li>
-                          {" "}
-                          <Link to={" "}>
-                            <span className="price">$100.00</span> and above
-                          </Link>{" "}
-                          (6){" "}
-                        </li>
-                      </ol>
-                    </dd>
-                    <dt className="even">Manufacturer</dt>
-                    <dd className="even">
-                      <ol>
-                        <li>
-                          {" "}
-                          <Link to={" "}>TheBrand</Link> (9){" "}
-                        </li>
-                        <li>
-                          {" "}
-                          <Link to={" "}>Company</Link> (4){" "}
-                        </li>
-                        <li>
-                          {" "}
-                          <Link to={" "}>LogoFashion</Link> (1){" "}
-                        </li>
-                      </ol>
-                    </dd>
-                    <dt className="odd">Color</dt>
-                    <dd className="odd">
-                      <ol>
-                        <li>
-                          {" "}
-                          <Link to={" "}>Green</Link> (1){" "}
-                        </li>
-                        <li>
-                          {" "}
-                          <Link to={" "}>White</Link> (5){" "}
-                        </li>
-                        <li>
-                          {" "}
-                          <Link to={" "}>Black</Link> (5){" "}
-                        </li>
-                        <li>
-                          {" "}
-                          <Link to={" "}>Gray</Link> (4){" "}
-                        </li>
-                        <li>
-                          {" "}
-                          <Link to={" "}>Dark Gray</Link> (3){" "}
-                        </li>
-                      </ol>
-                    </dd>
-                    <dt className="last even">Size</dt>
-                    <dd className="last even">
-                      <ol>
-                        <li>
-                          {" "}
-                          <Link to={" "}>Small</Link> (6){" "}
-                        </li>
-                        <li>
-                          {" "}
-                          <Link to={" "}>Medium</Link> (6){" "}
-                        </li>
-                        <li>
-                          {" "}
-                          <Link to={" "}>Large</Link> (4){" "}
-                        </li>
-                      </ol>
-                    </dd>
-                  </dl>
-                </div>
-              </div>
+
               <div className="custom-slider">
                 <div>
                   <div
@@ -383,7 +297,11 @@ export default function ProductPage() {
                     </ol>
                     <div className="carousel-inner">
                       <div className="item active">
-                        <img src="/assets/img/slide2.jpg" alt="slide3" />
+                        <img
+                          style={{ width: "100%", height: "300px" }}
+                          src="https://picsum.photos/278/279"
+                          alt="slide3"
+                        />
                         <div className="carousel-caption">
                           <h4>Fruit Shop</h4>
                           <h3>
@@ -404,7 +322,11 @@ export default function ProductPage() {
                         </div>
                       </div>
                       <div className="item">
-                        <img src="/assets/img/slide3.jpg" alt="slide1" />
+                        <img
+                          style={{ width: "100%", height: "300px" }}
+                          src="https://picsum.photos/214/215"
+                          alt="slide1"
+                        />
                         <div className="carousel-caption">
                           <h4>Black Grapes</h4>
                           <h3>
@@ -425,7 +347,11 @@ export default function ProductPage() {
                         </div>
                       </div>
                       <div className="item">
-                        <img src="/assets/img/slide1.jpg" alt="slide2" />
+                        <img
+                          style={{ width: "100%", height: "300px" }}
+                          src="https://picsum.photos/285/286"
+                          alt="slide2"
+                        />
                         <div className="carousel-caption">
                           <h4>Food Farm</h4>
                           <h3>
@@ -566,68 +492,6 @@ export default function ProductPage() {
                     </li>
                   </ul>
                 </div>
-              </div>
-              <div className="block block-compare">
-                <div className="block-title"> Compare Products </div>
-                <div className="block-content">
-                  <ol id="compare-items">
-                    <li className="item odd">
-                      <Link
-                        to={" "}
-                        className="btn-remove1"
-                        onClick={() => {}}
-                      ></Link>
-                      <Link className="product-name" to={" "}>
-                        Fresh Organic Mustard Leaves{" "}
-                      </Link>{" "}
-                    </li>
-                    <li className="item odd">
-                      <Link
-                        to={" "}
-                        className="btn-remove1"
-                        onClick={() => {}}
-                      ></Link>
-                      <Link className="product-name" to={" "}>
-                        Fresh Organic Mustard Leaves{" "}
-                      </Link>{" "}
-                    </li>
-                    <li className="item odd">
-                      <Link
-                        to={" "}
-                        className="btn-remove1"
-                        onClick={() => {}}
-                      ></Link>
-                      <Link className="product-name" to={" "}>
-                        Fresh Organic Mustard Leaves{" "}
-                      </Link>{" "}
-                    </li>
-                    <li className="item odd">
-                      <Link
-                        to={" "}
-                        className="btn-remove1"
-                        onClick={() => {}}
-                      ></Link>
-                      <Link className="product-name" to={" "}>
-                        Fresh Organic Mustard Leaves{" "}
-                      </Link>{" "}
-                    </li>
-                  </ol>
-
-                  <div className="ajax-checkout">
-                    <button
-                      type="button"
-                      title="Compare"
-                      className="button button-compare"
-                      onClick={() => {}}
-                    >
-                      <span>Compare</span>
-                    </button>
-                  </div>
-
-                  {/* <!--ajax-checkout--> */}
-                </div>
-
-                {/* <!--block-content--> */}
               </div>
 
               {/* <!--block block-list block-compare--> */}

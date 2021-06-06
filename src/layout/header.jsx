@@ -61,14 +61,14 @@ export default function Header() {
                         </Link>
                       </li>
                       <li className="level0 parent drop-menu">
-                        <Link to={" "}>
+                        <Link to={"/product"}>
                           <span>SẢN PHẨM</span>{" "}
                         </Link>
                         {/* <!--sub sub category--> */}
                         <ul className="level1">
                           {listCategory.map((cate, index) => (
                             <li className="level1 first" key={index}>
-                              <Link to={"/grid"}>
+                              <Link to={`/product/${cate.id}`}>
                                 <span>{cate.name}</span>
                               </Link>
                             </li>

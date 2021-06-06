@@ -17,6 +17,7 @@ export default function SideNavCategory({ listCategories, currentCategory }) {
               <li key={index}>
                 {" "}
                 <Link
+                  style={{ textDecoration: "none" }}
                   className={
                     category.id === currentCategory?.id ? "active" : ""
                   }

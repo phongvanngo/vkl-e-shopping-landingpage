@@ -35,7 +35,7 @@ class TopCategories extends Component {
 
             <div className="item">
               {" "}
-              <Link to={" "}>
+              <Link to={""}>
                 <div className="pro-img">
                   <img
                     src="/assets/img/p3.jpg"
