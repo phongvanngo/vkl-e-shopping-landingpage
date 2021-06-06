@@ -30,13 +30,16 @@ class Markup extends Component {
           <Route path="/404error" component={Error404} />
           <Route exact path="/product" component={ProductPage} />
           <Route path="/product/:id" component={ProductPage} />
+          <Route
+            path="/product-details/:productInfo"
+            component={ProductDetails}
+          />
           <Route path="/about-us" component={About} />
           <Route path="/blog-detail" component={Blog} />
           <Route path="/blog" component={BlogDetails} />
           <Route path="/list" component={List} />
           <Route path="/login" component={Login} />
           <Route path="/multiple-addresses" component={MultipleAddresses} />
-          <Route path="/product-details" component={ProductDetails} />
           <Route path="/shopping-cart" component={ShoppingCart} />
           <Route path="/wishlist" component={Wishlist} />
           <Route path="/checkout-method" component={CheckoutMethod} />

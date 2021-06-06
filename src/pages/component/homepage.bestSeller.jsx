@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { fetchListProductBestSeller } from "../../app/redux/productSlice";
+import queryString from "query-string";
 
 function numberWithSpaces(x) {
   return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
@@ -27,97 +28,103 @@ export default function BestSeller() {
       <>
         <div id="best-seller" className="product-flexslider hidden-buttons">
           <div className="slider-items slider-width-col4 products-grid">
-            {listProductBestSeller.map((product, index) => (
-              <div className="item" key={index}>
-                <div className="item-inner">
-                  <div className="item-img">
-                    <div className="item-img-info">
-                      <Link
-                        to={"/product-details"}
-                        title="Fresh Organic Mustard Leaves "
-                        className="product-image"
-                      >
-                        <img
-                          style={{ width: "270px", height: "270px" }}
-                          src={product.image}
-                          alt={product.name}
-                        />
-                      </Link>
-                      <div className="new-label new-top-left">Hot</div>
-                      <div className="sale-label sale-top-left">-15%</div>
-                      <div className="item-box-hover">
-                        <div className="box-inner">
-                          <div className="product-detail-bnt">
-                            <Link to="/" className="button detail-bnt">
-                              <span>Xem nhanh</span>
-                            </Link>
-                          </div>
-                          <div className="actions">
-                            <span className="add-to-links">
-                              <Link
-                                to="/"
-                                className="link-wishlist"
-                                title="Add to Wishlist"
-                              >
-                                <span>Thêm vào danh sách</span>
-                              </Link>{" "}
-                              <Link
-                                to="/"
-                                className="link-compare add_to_compare"
-                                title="Add to Compare"
-                              >
-                                <span>Add to Compare</span>
-                              </Link>
-                            </span>{" "}
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="add_cart">
-                      <button className="button btn-cart" type="button">
-                        <span>Thêm vào giỏ hàng</span>
-                      </button>
-                    </div>
-                  </div>
-                  <div className="item-info">
-                    <div className="info-inner">
-                      <div className="item-title">
+            {listProductBestSeller.map((product, index) => {
+              let params = queryString.stringify({
+                category_id: null,
+                product_id: product.id,
+              });
+              return (
+                <div className="item" key={index}>
+                  <div className="item-inner">
+                    <div className="item-img">
+                      <div className="item-img-info">
                         <Link
-                          to={"/product-details"}
+                          to={`/product-details/${params}`}
                           title="Fresh Organic Mustard Leaves "
+                          className="product-image"
                         >
-                          {product.name}{" "}
-                        </Link>{" "}
-                      </div>
-                      <div className="item-content">
-                        <div className="rating">
-                          <div className="ratings">
-                            <div className="rating-box">
-                              <div className="rating"></div>
+                          <img
+                            style={{ width: "270px", height: "270px" }}
+                            src={product.image}
+                            alt={product.name}
+                          />
+                        </Link>
+                        <div className="new-label new-top-left">Hot</div>
+                        <div className="sale-label sale-top-left">-15%</div>
+                        <div className="item-box-hover">
+                          <div className="box-inner">
+                            <div className="product-detail-bnt">
+                              <Link to="/" className="button detail-bnt">
+                                <span>Xem nhanh</span>
+                              </Link>
                             </div>
-                            <p className="rating-links">
-                              <Link to="/">1 Review(s)</Link>{" "}
-                              <span className="separator">|</span>{" "}
-                              <Link to="/">Add Review</Link>
-                            </p>
+                            <div className="actions">
+                              <span className="add-to-links">
+                                <Link
+                                  to="/"
+                                  className="link-wishlist"
+                                  title="Add to Wishlist"
+                                >
+                                  <span>Thêm vào danh sách</span>
+                                </Link>{" "}
+                                <Link
+                                  to="/"
+                                  className="link-compare add_to_compare"
+                                  title="Add to Compare"
+                                >
+                                  <span>Add to Compare</span>
+                                </Link>
+                              </span>{" "}
+                            </div>
                           </div>
                         </div>
-                        <div className="item-price">
-                          <div className="price-box">
-                            <span className="regular-price">
-                              <span className="price">
-                                {numberWithSpaces(product.price)}
-                                {" VND"}
-                              </span>{" "}
-                            </span>
+                      </div>
+                      <div className="add_cart">
+                        <button className="button btn-cart" type="button">
+                          <span>Thêm vào giỏ hàng</span>
+                        </button>
+                      </div>
+                    </div>
+                    <div className="item-info">
+                      <div className="info-inner">
+                        <div className="item-title">
+                          <Link
+                            to={`/product-details/${params}`}
+                            title="Fresh Organic Mustard Leaves "
+                          >
+                            {product.name}{" "}
+                          </Link>{" "}
+                        </div>
+                        <div className="item-content">
+                          <div className="rating">
+                            <div className="ratings">
+                              <div className="rating-box">
+                                <div className="rating"></div>
+                              </div>
+                              <p className="rating-links">
+                                <Link to="/">1 Review(s)</Link>{" "}
+                                <span className="separator">|</span>{" "}
+                                <Link to="/">Add Review</Link>
+                              </p>
+                            </div>
+                          </div>
+                          <div className="item-price">
+                            <div className="price-box">
+                              <span className="regular-price">
+                                <span className="price">
+                                  {numberWithSpaces(product.price)}
+                                  {" VND"}
+                                </span>{" "}
+                              </span>
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </>

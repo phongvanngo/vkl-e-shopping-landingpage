@@ -1,10 +1,10 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import productApi from "../api/productApi";
-import { openErrorNofificationDialog } from "./dialogSlice";
 import { startLoading, stopLoading } from "./loadingSlice";
 
 const initialState = {
   listProduct: [],
+  currentProduct: null,
 };
 
 export const fetchListProduct = createAsyncThunk(
@@ -16,6 +16,34 @@ export const fetchListProduct = createAsyncThunk(
     dispatch(startLoading());
     try {
       const response = await productApi.getListProduct();
+      console.log(response);
+      switch (response.status) {
+        case 200:
+          dispatch(stopLoading());
+          return response.data;
+        case 401:
+          throw new Error("Unauthorize");
+        case 400:
+          console.log("hi");
+          throw new Error("");
+        default:
+          throw new Error("Error");
+      }
+    } catch (error) {
+      dispatch(stopLoading());
+      return null;
+    }
+  }
+);
+export const fetchProductById = createAsyncThunk(
+  "product/fetchProductById",
+  async (payload, thunkApi) => {
+    if (payload !== null) {
+    }
+    const { dispatch } = thunkApi;
+    dispatch(startLoading());
+    try {
+      const response = await productApi.getProductById(payload);
       console.log(response);
       switch (response.status) {
         case 200:
@@ -102,6 +130,11 @@ export const productSlice = createSlice({
         if (action.payload === null) return;
         const { listProduct } = action.payload;
         state.listProduct = listProduct;
+      })
+      .addCase(fetchProductById.fulfilled, (state, action) => {
+        if (action.payload === null) return;
+        const { productDetail } = action.payload;
+        state.currentProduct = productDetail;
       })
       .addCase(fetchListProductByCategory.fulfilled, (state, action) => {
         if (action.payload === null) return;

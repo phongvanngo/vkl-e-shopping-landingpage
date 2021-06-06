@@ -16,10 +16,23 @@ const productApi = {
     });
     return response;
   },
+  getProductById: async (productId) => {
+    let response = await fakeApi({
+      // request: loginInfo,
+      response: {
+        status: 200,
+        data: {
+          productDetail: allProducts.find((product) => product.id == productId),
+        },
+      },
+      timeOut: 1000,
+    });
+    return response;
+  },
   getListProductByCategory: async (category_id) => {
     let dt = {
       listProduct: allProducts.filter(
-        (product) => product.category_id === category_id
+        (product) => product.category_id == category_id
       ),
     };
     console.log("get list product by cateogry api - payload", category_id, dt);
@@ -29,7 +42,7 @@ const productApi = {
         status: 200,
         data: {
           listProduct: allProducts.filter(
-            (product) => product.category_id === category_id
+            (product) => product.category_id == category_id
           ),
         },
       },
