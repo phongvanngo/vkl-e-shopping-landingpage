@@ -6,7 +6,7 @@ import About from "./pages/about-us";
 import Blog from "./pages/blog-detail";
 import BlogDetails from "./pages/blog";
 import List from "./pages/list";
-import Grid from "./pages/grid";
+import ProductPage from "./pages/ProductPage";
 import Login from "./pages/login";
 import MultipleAddresses from "./pages/multiple-addresses";
 import ProductDetails from "./pages/product-details";
@@ -26,11 +26,12 @@ class Markup extends Component {
         <Switch>
           <Route path="/" exact component={Index} />
           <Route path="/404error" component={Error404} />
+          <Route exact path="/product" component={ProductPage} />
+          <Route path="/product/:id" component={ProductPage} />
           <Route path="/about-us" component={About} />
           <Route path="/blog-detail" component={Blog} />
           <Route path="/blog" component={BlogDetails} />
           <Route path="/list" component={List} />
-          <Route path="/grid" component={Grid} />
           <Route path="/login" component={Login} />
           <Route path="/multiple-addresses" component={MultipleAddresses} />
           <Route path="/product-details" component={ProductDetails} />

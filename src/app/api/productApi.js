@@ -9,7 +9,7 @@ const productApi = {
       response: {
         status: 200,
         data: {
-          listCategory: allProducts,
+          listProduct: allProducts,
         },
       },
       timeOut: 1000,

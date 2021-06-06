@@ -4,7 +4,7 @@ import { openErrorNofificationDialog } from "./dialogSlice";
 import { startLoading, stopLoading } from "./loadingSlice";
 
 const initialState = {
-  listCategory: [],
+  listCategory: null,
 };
 
 export const fetchListCategory = createAsyncThunk(

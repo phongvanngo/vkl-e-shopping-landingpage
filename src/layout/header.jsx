@@ -6,7 +6,9 @@ import { Link } from "react-router-dom";
 // import {} from 'react-router-dom'
 
 export default function Header() {
-  const listCategory = useSelector((state) => state.category.listCategory);
+  const listCategory = useSelector(
+    (state) => state.category.listCategory || []
+  );
   return (
     <>
       <header>

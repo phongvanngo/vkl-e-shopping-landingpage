@@ -6,7 +6,9 @@ import { fetchListCategory } from "./../../app/redux/categorySlice";
 
 export default function TopCategorySlider() {
   const dispatch = useDispatch();
-  const listCategory = useSelector((state) => state.category.listCategory);
+  const listCategory = useSelector(
+    (state) => state.category.listCategory || []
+  );
   console.log(listCategory);
 
   function CategoryCarousel() {
