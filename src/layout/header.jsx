@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, useEffect } from "react";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import MiniCartContent from "./header.miniCart";
@@ -10,6 +10,9 @@ export default function Header() {
   const listCategory = useSelector(
     (state) => state.category.listCategory || []
   );
+  useEffect(() => {
+    // window.commonjs();
+  }, []);
   return (
     <>
       <header>
@@ -184,13 +187,13 @@ export default function Header() {
 
                       <li>
                         {" "}
-                        <Link className="level-top" to={"/"}>
+                        <Link className="level-top" to={"/about-us"}>
                           <span>VỀ CHÚNG TÔI</span>
                         </Link>
                       </li>
                       <li>
                         {" "}
-                        <Link className="level-top" to={"/"}>
+                        <Link className="level-top" to={"/contact-us"}>
                           <span>LIÊN HỆ</span>
                         </Link>
                       </li>

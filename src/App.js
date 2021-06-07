@@ -22,6 +22,7 @@ import LoadingPage from "./pages/component/loadingPage/loadingPage";
 import { CalculateCart, restoreCart } from "./app/redux/cartSlice";
 import { useDispatch } from "react-redux";
 import { fetchListCategory } from "./app/redux/categorySlice";
+import { loadCitiesData } from "./app/redux/addressSlice";
 
 export default function App() {
   const dispatch = useDispatch();
@@ -29,6 +30,7 @@ export default function App() {
     dispatch(restoreCart());
     dispatch(fetchListCategory());
     dispatch(CalculateCart());
+    dispatch(loadCitiesData());
   }, []);
   return (
     <BrowserRouter>

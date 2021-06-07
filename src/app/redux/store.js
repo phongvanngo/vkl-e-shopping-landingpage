@@ -4,6 +4,7 @@ import dialogReducer from "./dialogSlice";
 import categoryReducer from "./categorySlice";
 import productReducer from "./productSlice";
 import cartReducer from "./cartSlice";
+import addressReducder from "./addressSlice";
 
 export const store = configureStore({
   reducer: {
@@ -12,5 +13,6 @@ export const store = configureStore({
     dialog: dialogReducer,
     product: productReducer,
     cart: cartReducer,
+    address: addressReducder,
   },
 });

@@ -81,12 +81,12 @@ export default function MiniCartContent() {
             </ul>
             <div className="actions">
               <Link
-                to={"/checkout"}
+                to={"/shopping-cart"}
                 className="btn-checkout"
                 title="Checkout"
                 type="button"
               >
-                <span>Checkout</span>
+                <span>Xem giỏ hàng</span>
               </Link>
             </div>
             {/* <!--actions--> */}

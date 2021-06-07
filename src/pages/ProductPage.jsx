@@ -7,6 +7,7 @@ import { fetchListCategory } from "../app/redux/categorySlice";
 import ProductPageHeading from "./component/productPage/PageHeading";
 import ListProductsComponent from "./component/productPage/ListProduct";
 import SideNavCategory from "./component/productPage/SideNavCategory";
+import MyCart from "./component/productPage/MyCart";
 
 export default function ProductPage() {
   const dispatch = useDispatch();
@@ -391,106 +392,7 @@ export default function ProductPage() {
                 </div>
               </div>
 
-              <div className="block block-list block-cart">
-                <div className="block-title"> My Cart </div>
-                <div className="block-content">
-                  <div className="summary">
-                    <p className="amount">
-                      There is <Link to={" "}>1 item</Link> in your cart.
-                    </p>
-                    <p className="subtotal">
-                      {" "}
-                      <span className="label">Cart Subtotal:</span>{" "}
-                      <span className="price">$299.00</span>{" "}
-                    </p>
-                  </div>
-                  <div className="ajax-checkout">
-                    <button
-                      type="button"
-                      title="Checkout"
-                      className="button button-checkout"
-                      onClick={() => {}}
-                    >
-                      <span>Checkout</span>{" "}
-                    </button>
-                  </div>
-                  <p className="block-subtitle">Recently added item(s)</p>
-                  <ul id="cart-sidebar1" className="mini-products-list">
-                    <li className="item">
-                      <div className="item-inner">
-                        {" "}
-                        <Link to={" "} className="product-image">
-                          <img
-                            src="/assets/img/p1.jpg"
-                            width="80"
-                            alt="product"
-                          />
-                        </Link>
-                        <div className="product-details">
-                          <div className="access">
-                            {" "}
-                            <Link to={" "} className="btn-remove1">
-                              Remove
-                            </Link>
-                            <Link
-                              to=""
-                              href=""
-                              title="Edit item"
-                              className="btn-edit"
-                            >
-                              <i className="icon-pencil"></i>
-                              <span className="hidden">Edit item</span>
-                            </Link>{" "}
-                          </div>
-                          {/* <!--access--> */}
-                          <strong>1</strong> x{" "}
-                          <span className="price">$299.00</span>
-                          <p className="product-name">
-                            <Link to={" "}>Fresh Organic Mustard Leaves </Link>
-                          </p>
-                        </div>
-                        {/* <!--product-details-bottoms--> */}
-                      </div>
-                    </li>
-                    <li className="item  last1">
-                      <div className="item-inner">
-                        {" "}
-                        <Link to={" "} className="product-image">
-                          <img
-                            src="/assets/img/p2.jpg"
-                            width="80"
-                            alt="product"
-                          />
-                        </Link>
-                        <div className="product-details">
-                          <div className="access">
-                            {" "}
-                            <Link to={" "} className="btn-remove1">
-                              Remove
-                            </Link>
-                            <Link
-                              to=""
-                              href=""
-                              title="Edit item"
-                              className="btn-edit"
-                            >
-                              <i className="icon-pencil"></i>
-                              <span className="hidden">Edit item</span>
-                            </Link>{" "}
-                          </div>
-                          {/* <!--access--> */}
-                          <strong>1</strong> x{" "}
-                          <span className="price">$299.00</span>
-                          <p className="product-name">
-                            <Link to={" "}>Fresh Organic Mustard Leaves </Link>
-                          </p>
-                        </div>
-                        {/* <!--product-details-bottoms--> */}
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </div>
+              <MyCart />
 
               {/* <!--block block-list block-compare--> */}
             </aside>
