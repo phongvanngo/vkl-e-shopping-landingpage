@@ -7,6 +7,7 @@ import Blog from "./pages/blog-detail";
 import BlogDetails from "./pages/blog";
 import List from "./pages/list";
 import ProductPage from "./pages/ProductPage";
+import ProductPage2 from "./pages/grid";
 import Login from "./pages/login";
 import MultipleAddresses from "./pages/multiple-addresses";
 import ProductDetails from "./pages/product-details";
@@ -58,6 +59,7 @@ export default function App() {
         <Route path="/dashboard" component={Dashboard} />
         <Route path="/newsletter" component={Newsletter} />
         <Route path="/quickview" component={QuickView} />
+        <Route path="/grid" component={ProductPage2} />
       </Switch>
     </BrowserRouter>
   );

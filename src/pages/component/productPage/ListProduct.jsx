@@ -27,14 +27,17 @@ export default function ListProductsComponent({ currentCategory }) {
 
   return (
     <>
-      {listProduct.map((product, index) => {
-        let params = queryString.stringify({
-          category_id: currentCategory.id,
-          product_id: product.id,
-        });
-        return (
-          <ul className="products-grid" key={index}>
-            <li className="item col-lg-4 col-md-3 col-sm-4 col-xs-6">
+      <ul className="products-grid">
+        {listProduct.map((product, index) => {
+          let params = queryString.stringify({
+            category_id: currentCategory.id,
+            product_id: product.id,
+          });
+          return (
+            <li
+              key={index}
+              className="item col-lg-4 col-md-3 col-sm-4 col-xs-6"
+            >
               <div className="item-inner">
                 <div className="item-img">
                   <div className="item-img-info">
@@ -44,7 +47,7 @@ export default function ListProductsComponent({ currentCategory }) {
                       className="product-image"
                     >
                       <img
-                        // style={{ width: "300px", height: "300px" }}
+                        style={{ width: "300px", height: "300px" }}
                         src={product.image}
                         alt={product.name}
                       />
@@ -131,9 +134,9 @@ export default function ListProductsComponent({ currentCategory }) {
                 </div>
               </div>
             </li>
-          </ul>
-        );
-      })}
+          );
+        })}
+      </ul>
     </>
   );
 }
