@@ -1,6 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import { Link, useHistory } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { numberWithSpaces } from "../../../app/myLibrary/utilities";
 import CitiesBox from "./cartCollaterals.citiesBox";
 import DistrictsBox from "./cartCollaterals.districtsBox";
@@ -9,20 +9,70 @@ import WardsBox from "./cartCollaterals.wardsBox";
 export default function CartCollaterals() {
   const totalPrice = useSelector((state) => state.cart.totalPrice);
   const cities = useSelector((state) => state.address.cities);
-  const history = useHistory();
+
   return (
     <>
       <div className="cart-collaterals container">
         {/* <!-- BEGIN COL2 SEL COL 1 --> */}
         <div className="row">
           {/* <!-- BEGIN TOTALS COL 2 --> */}
-          {/* <div className="col-sm-4"></div> */}
+          <div className="col-sm-4">
+            <div className="shipping">
+              <h3>Estimate Shipping and Tax</h3>
+              <div className="shipping-form">
+                <form action="" method="post" id="shipping-zip-form">
+                  <p>Enter your destination to get a shipping estimate.</p>
+                  <ul className="form-list">
+                    <li>
+                      <label for="country" className="required">
+                        <em>*</em>Tỉnh/ Thành phố
+                      </label>
+                      <CitiesBox />
+                    </li>
+                    <li>
+                      <label for="region_id">Quận/ Huyện</label>
+                      <DistrictsBox />
+                    </li>
+                    <li>
+                      <label for="region_id">Phường/ Xã</label>
+                      <WardsBox />
+                    </li>
+                    <li>
+                      <label for="postcode">Tên đường, địa chỉ nhà: </label>
+                      <div className="input-box">
+                        <input
+                          className="input-text validate-postcode"
+                          type="text"
+                          id="postcode"
+                          name="estimate_postcode"
+                        />
+                      </div>
+                    </li>
+                  </ul>
+                  <div className="buttons-set11">
+                    <button
+                      type="button"
+                      title="Get a Quote"
+                      onClick="coShippingMethodForm.submit()"
+                      className="button get-quote"
+                    >
+                      <span>Get a Quote</span>
+                    </button>
+                  </div>
 
-          <div className="col-sm-6">
+                  {/* <!--buttons-set11--> */}
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <div className="col-sm-4">
             <div className="discount">
-              <h3>Mã khuyến mãi</h3>
+              <h3>Discount Codes</h3>
               <form id="discount-coupon-form" action="" method="post">
-                <label for="coupon_code">Nhập mã khuyến mãi của bạn.</label>
+                <label for="coupon_code">
+                  Enter your coupon code if you have one.
+                </label>
                 <input
                   type="hidden"
                   name="remove"
@@ -31,7 +81,6 @@ export default function CartCollaterals() {
                 />
                 <input
                   className="input-text fullwidth"
-                  style={{ maxWidth: "500px" }}
                   type="text"
                   id="coupon_code"
                   name="coupon_code"
@@ -44,7 +93,7 @@ export default function CartCollaterals() {
                   onClick="discountForm.submit(false)"
                   value="Apply Coupon"
                 >
-                  <span>Áp dụng</span>
+                  <span>Apply Coupon</span>
                 </button>
               </form>
             </div>
@@ -54,9 +103,9 @@ export default function CartCollaterals() {
 
           {/* <!--col-sm-4--> */}
 
-          <div className="col-sm-6">
+          <div className="col-sm-4">
             <div className="totals">
-              <h3>Giá trị đơn hàng của bạn</h3>
+              <h3>Shopping Cart Total</h3>
               <div className="inner">
                 <table
                   id="shopping-cart-totals-table"
@@ -69,7 +118,7 @@ export default function CartCollaterals() {
                   <tfoot>
                     <tr>
                       <td className="a-left" colspan="1">
-                        <strong>Tổng cộng</strong>
+                        <strong>Grand Total</strong>
                       </td>
                       <td className="a-right">
                         <strong>
@@ -83,21 +132,11 @@ export default function CartCollaterals() {
                   <tbody>
                     <tr>
                       <td className="a-left" colspan="1">
-                        Tạm tính{" "}
+                        Subtotal{" "}
                       </td>
                       <td className="a-right">
                         <span className="price">
                           {numberWithSpaces(totalPrice) + " VND"}
-                        </span>{" "}
-                      </td>
-                    </tr>
-                    <tr>
-                      <td className="a-left" colspan="1">
-                        Chiết khấu{" "}
-                      </td>
-                      <td className="a-right">
-                        <span className="price">
-                          {"-" + numberWithSpaces(0) + " VND"}
                         </span>{" "}
                       </td>
                     </tr>
@@ -110,14 +149,20 @@ export default function CartCollaterals() {
                       type="button"
                       title="Proceed to Checkout"
                       className="button btn-proceed-checkout"
-                      onClick={() => {
-                        history.push("/checkout");
-                      }}
+                      onClick=""
                     >
-                      <span>Tiến tới đặt hàng</span>
+                      <span>Proceed to Checkout</span>
                     </button>
                   </li>
                   <br />
+                  <li>
+                    <Link
+                      to={"/multiple-addresses"}
+                      title="Checkout with Multiple Addresses"
+                    >
+                      Checkout with Multiple Addresses
+                    </Link>
+                  </li>
                   <br />
                 </ul>
               </div>
