@@ -163,7 +163,7 @@ class CheckoutMethod extends Component {
                     <div
                       id="checkout-step-billing"
                       className="step a-item"
-                      style={{}}
+                      style={{ display: "none" }}
                     >
                       <form id="co-billing-form" action="">
                         <fieldset className="group-select">
@@ -574,7 +574,7 @@ class CheckoutMethod extends Component {
                                           value=""
                                           title="State/Province"
                                           className="input-text required-entry"
-                                          style={{}}
+                                          style={{ display: "none" }}
                                         />
                                       </div>
                                     </div>
@@ -1028,7 +1028,7 @@ class CheckoutMethod extends Component {
                                 <div className="remember-me-popup">
                                   <div
                                     className="remember-me-popup-head"
-                                    style={{}}
+                                    style={{ display: "none" }}
                                   >
                                     <h3 id="text2">What's this?</h3>
                                     <a
@@ -1042,7 +1042,7 @@ class CheckoutMethod extends Component {
                                   </div>
                                   <div
                                     className="remember-me-popup-body"
-                                    style={{}}
+                                    style={{ display: "none" }}
                                   >
                                     <p id="text1">
                                       Checking "Remember Me" will let you access
@@ -1109,7 +1109,7 @@ class CheckoutMethod extends Component {
                             <span
                               className="please-wait"
                               id="billing-please-wait"
-                              style={{}}
+                              style={{ display: "none" }}
                             >
                               {" "}
                               <img
@@ -1137,7 +1137,7 @@ class CheckoutMethod extends Component {
                     <div
                       id="checkout-step-shipping"
                       className="step a-item"
-                      style={{}}
+                      style={{ display: "none" }}
                     >
                       <form action="" id="co-shipping-form">
                         <ul className="">
@@ -1494,7 +1494,7 @@ class CheckoutMethod extends Component {
                                       value=""
                                       title="State/Province"
                                       className="input-text required-entry"
-                                      style={{}}
+                                      style={{ display: "none" }}
                                     />
                                   </div>
                                 </li>
@@ -1927,7 +1927,7 @@ class CheckoutMethod extends Component {
                           <span
                             id="shipping-please-wait"
                             className="please-wait"
-                            style={{}}
+                            style={{ display: "none" }}
                           >
                             {" "}
                             <img
@@ -1951,7 +1951,7 @@ class CheckoutMethod extends Component {
                     <div
                       id="checkout-step-shipping_method"
                       className="step a-item"
-                      style={{}}
+                      style={{ display: "none" }}
                     >
                       <form id="co-shipping-method-form" action="">
                         <div id="checkout-shipping-method-load">
@@ -1980,7 +1980,7 @@ class CheckoutMethod extends Component {
                           <span
                             id="shipping-method-please-wait"
                             className="please-wait"
-                            style={{}}
+                            style={{ display: "none" }}
                           >
                             {" "}
                             <img
@@ -2004,7 +2004,7 @@ class CheckoutMethod extends Component {
                     <div
                       id="checkout-step-payment"
                       className="step a-item"
-                      style={{}}
+                      style={{ display: "none" }}
                     >
                       <form action="" id="co-payment-form">
                         <fieldset>
@@ -2019,7 +2019,7 @@ class CheckoutMethod extends Component {
                       <div
                         className="tool-tip"
                         id="payment-tool-tip"
-                        style={{}}
+                        style={{ display: "none" }}
                       >
                         <div className="btn-close">
                           <a href="#" id="payment-tool-tip-close" title="Close">
@@ -2048,7 +2048,7 @@ class CheckoutMethod extends Component {
                         <span
                           className="please-wait"
                           id="payment-please-wait"
-                          style={{}}
+                          style={{ display: "none" }}
                         >
                           {" "}
                           <img
@@ -2071,7 +2071,7 @@ class CheckoutMethod extends Component {
                     <div
                       id="checkout-step-review"
                       className="step a-item"
-                      style={{}}
+                      style={{ display: "none" }}
                     >
                       <div className="order-review" id="checkout-review-load">
                         {/* <!-- Content loaded dynamically -->  */}

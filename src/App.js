@@ -53,7 +53,7 @@ export default function App() {
         <Route path="/shopping-cart" component={ShoppingCart} />
         <Route path="/wishlist" component={Wishlist} />
         <Route path="/checkout-method" component={CheckoutMethod} />
-        <Route path="/checkout" component={Checkout} />
+        <Route path="/checkout" component={CheckoutMethod} />
         <Route path="/contact-us" component={ContactUs} />
         <Route path="/dashboard" component={Dashboard} />
         <Route path="/newsletter" component={Newsletter} />
