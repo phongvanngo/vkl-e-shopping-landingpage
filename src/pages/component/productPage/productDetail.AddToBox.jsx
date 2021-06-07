@@ -1,12 +1,16 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
-import { increaseItemToCart } from "../../../app/redux/cartSlice";
+import {
+  CalculateCart,
+  increaseItemToCart,
+} from "../../../app/redux/cartSlice";
 
 export default function AddToBoxComponent({ product }) {
   const [quantity, setQuantity] = useState(1);
   const dispatch = useDispatch();
   const handleAddToCart = () => {
     dispatch(increaseItemToCart({ product: product, quantity: quantity }));
+    dispatch(CalculateCart());
   };
   return (
     <>

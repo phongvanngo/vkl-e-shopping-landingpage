@@ -7,7 +7,10 @@ import {
   fetchListProduct,
   fetchListProductByCategory,
 } from "../../../app/redux/productSlice";
-import { increaseItemToCart } from "../../../app/redux/cartSlice";
+import {
+  CalculateCart,
+  increaseItemToCart,
+} from "../../../app/redux/cartSlice";
 
 export default function ListProductsComponent({ currentCategory }) {
   const dispatch = useDispatch();
@@ -79,6 +82,7 @@ export default function ListProductsComponent({ currentCategory }) {
                     <button
                       onClick={() => {
                         dispatch(increaseItemToCart({ product, quantity: 1 }));
+                        dispatch(CalculateCart());
                       }}
                       className="button btn-cart"
                       type="button"

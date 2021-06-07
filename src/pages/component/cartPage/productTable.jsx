@@ -6,6 +6,7 @@ import {
   increaseItemToCart,
   removeItemFromCart,
   decreaseItemFromCart,
+  CalculateCart,
 } from "../../../app/redux/cartSlice";
 import { numberWithSpaces } from "../../../app/myLibrary/utilities";
 
@@ -17,13 +18,16 @@ export default function ListProductInCart() {
 
   const handleIncreaseItem = (product) => {
     dispatch(increaseItemToCart({ product: product, quantity: 1 }));
+    dispatch(CalculateCart());
   };
   const handleDecreaseItem = (product) => {
     dispatch(decreaseItemFromCart({ product: product, quantity: 1 }));
+    dispatch(CalculateCart());
   };
 
   const handleRemoveItem = (product) => {
     dispatch(removeItemFromCart(product.id));
+    dispatch(CalculateCart());
   };
 
   return (

@@ -19,7 +19,7 @@ import Dashboard from "./pages/dashboard";
 import Newsletter from "./pages/newsletter";
 import QuickView from "./pages/quickview";
 import LoadingPage from "./pages/component/loadingPage/loadingPage";
-import { restoreCart } from "./app/redux/cartSlice";
+import { CalculateCart, restoreCart } from "./app/redux/cartSlice";
 import { useDispatch } from "react-redux";
 import { fetchListCategory } from "./app/redux/categorySlice";
 
@@ -28,6 +28,7 @@ export default function App() {
   useEffect(() => {
     dispatch(restoreCart());
     dispatch(fetchListCategory());
+    dispatch(CalculateCart());
   }, []);
   return (
     <BrowserRouter>

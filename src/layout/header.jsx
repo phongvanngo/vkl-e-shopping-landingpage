@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+import MiniCartContent from "./header.miniCart";
 // import $ from 'jquery';
 
 // import {} from 'react-router-dom'
@@ -300,122 +301,7 @@ export default function Header() {
                     </div>
                   </div>
                 </div>
-                <div className="fl-cart-contain">
-                  <div className="mini-cart">
-                    <div className="basket">
-                      {" "}
-                      <Link to={"/shopping-cart"}>
-                        <span> 2 </span>
-                      </Link>{" "}
-                    </div>
-                    <div className="fl-mini-cart-content">
-                      <div className="block-subtitle">
-                        <div className="top-subtotal">
-                          2 items, <span className="price">$259.99</span>{" "}
-                        </div>
-                        {/* <!--top-subtotal--> */}
-                        {/* <!--pull-right--> */}
-                      </div>
-                      {/* <!--block-subtitle--> */}
-                      <ul className="mini-products-list" id="cart-sidebar">
-                        <li className="item first">
-                          <div className="item-inner">
-                            <Link
-                              className="product-image"
-                              title="timi &amp; leslie Sophia Diaper Bag, Lemon Yellow/Shadow White"
-                              to="#l"
-                            >
-                              <img
-                                alt="timi &amp; leslie Sophia Diaper Bag, Lemon Yellow/Shadow White"
-                                src="/assets/img/p4.jpg"
-                              />
-                            </Link>
-                            <div className="product-details">
-                              <div className="access">
-                                <Link
-                                  className="btn-remove1"
-                                  title="Remove This Item"
-                                  to={" "}
-                                >
-                                  Remove
-                                </Link>{" "}
-                                <Link
-                                  className="btn-edit"
-                                  title="Edit item"
-                                  to={" "}
-                                >
-                                  <i className="icon-pencil"></i>
-                                  <span className="hidden">Edit item</span>
-                                </Link>{" "}
-                              </div>
-                              {/* <!--access--> */}
-                              <strong>1</strong> x{" "}
-                              <span className="price">$179.99</span>
-                              <p className="product-name">
-                                <Link to={"/product-details"}>
-                                  Fresh Organic Mustard Leaves
-                                </Link>
-                              </p>
-                            </div>
-                          </div>
-                        </li>
-                        <li className="item last">
-                          <div className="item-inner">
-                            <Link
-                              className="product-image"
-                              title="JP Lizzy Satchel Designer Diaper Bag - Slate Citron"
-                              to={" "}
-                            >
-                              <img
-                                alt="JP Lizzy Satchel Designer Diaper Bag - Slate Citron"
-                                src="/assets/img/p3.jpg"
-                              />
-                            </Link>
-                            <div className="product-details">
-                              <div className="access">
-                                <Link
-                                  className="btn-remove1"
-                                  title="Remove This Item"
-                                  to={" "}
-                                >
-                                  Remove
-                                </Link>{" "}
-                                <Link
-                                  className="btn-edit"
-                                  title="Edit item"
-                                  to={" "}
-                                >
-                                  <i className="icon-pencil"></i>
-                                  <span className="hidden">Edit item</span>
-                                </Link>{" "}
-                              </div>
-                              {/* <!--access--> */}
-                              <strong>1</strong> x{" "}
-                              <span className="price">$80.00</span>
-                              <p className="product-name">
-                                <Link to={"/product-details"}>
-                                  Fresh Organic Mustard Leaves
-                                </Link>
-                              </p>
-                            </div>
-                          </div>
-                        </li>
-                      </ul>
-                      <div className="actions">
-                        <Link
-                          to={"/checkout"}
-                          className="btn-checkout"
-                          title="Checkout"
-                          type="button"
-                        >
-                          <span>Checkout</span>
-                        </Link>
-                      </div>
-                      {/* <!--actions--> */}
-                    </div>
-                    {/* <!--fl-mini-cart-content--> */}
-                  </div>
-                </div>
+                <MiniCartContent />
                 {/* <!--mini-cart--> */}
                 <div className="collapse navbar-collapse">
                   <form className="navbar-form" role="search">
