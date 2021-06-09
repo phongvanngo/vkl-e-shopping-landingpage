@@ -643,38 +643,38 @@ export default function Index() {
             <li>
               <div className="feature-box">
                 <div className="icon-truck"></div>
-                <div className="content">FREE SHIPPING on order over $99</div>
+                <div className="content">Miễn phí vận chuyển cho đơn hàng từ 599.000Vnđ</div>
               </div>
             </li>
             <li>
               <div className="feature-box">
                 <div className="icon-support"></div>
                 <div className="content">
-                  Have a question? <br />
-                  +1 800 789 0000{" "}
+                  Bạn cần tư vấn? <br />
+                  0907 438 265{" "}
                 </div>
               </div>
             </li>
             <li>
               <div className="feature-box">
                 <div className="icon-money"></div>
-                <div className="content">100% Money Back Guarantee</div>
+                <div className="content">Hoàn tiền 100%</div>
               </div>
             </li>
             <li>
               <div className="feature-box">
                 <div className="icon-return"></div>
-                <div className="content">30 days return Service</div>
+                <div className="content">30 ngày đổi trả</div>
               </div>
             </li>
             <li className="last">
               <div className="feature-box">
                 {" "}
                 <Link to={" "}>
-                  <i className="fa fa-apple"></i> download
+                  <i className="fa fa-apple"></i> Tải về
                 </Link>{" "}
                 <Link to={" "}>
-                  <i className="fa fa-android"></i> download
+                  <i className="fa fa-android"></i> Tải về
                 </Link>{" "}
               </div>
             </li>

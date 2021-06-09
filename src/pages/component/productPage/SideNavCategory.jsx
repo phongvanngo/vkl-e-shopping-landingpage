@@ -6,7 +6,7 @@ export default function SideNavCategory({ listCategories, currentCategory }) {
   return (
     <div>
       <div className="side-nav-categories">
-        <div className="block-title"> Categories </div>
+        <div className="block-title"> Danh mục sản phẩm </div>
 
         {/* <!--block-title--> */}
 

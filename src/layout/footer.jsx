@@ -14,8 +14,8 @@ class Footer extends Component {
                   {/* <!-- Footer Newsletter --> */}
                   <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 col1">
                     <div className="newsletter-wrap">
-                      <h5>Newsletter</h5>
-                      <h4>Get discount 30% off</h4>
+                      <h5>Đăng ký nhận tin</h5>
+                      <h4>Giảm ngay 30%</h4>
                       <form action="#" method="post" id="newsletter-validate-detail1">
                         <div id="container_form_news">
                           <div id="container_form_news2">
@@ -28,7 +28,7 @@ class Footer extends Component {
                               placeholder="Enter your email address"
                             />
                             <button type="submit" title="Subscribe" className="button subscribe">
-                              <span>Subscribe</span>
+                              <span>Đăng ký ngay</span>
                             </button>
                           </div>
                           {/* <!--container_form_news2--> */}
@@ -47,7 +47,7 @@ class Footer extends Component {
                 <div className="row">
                   <div className="col-md-3 col-sm-6">
                     <div className="footer-column">
-                      <h4>Shopping Guide</h4>
+                      <h4>Hướng dẫn mua hàng</h4>
                       <ul className="links">
                         <li>
                           <a href="blog.html" title="How to buy">
@@ -56,27 +56,27 @@ class Footer extends Component {
                         </li>
                         <li>
                           <a href="faq.html" title="FAQs">
-                            FAQs
+                            Câu hỏi thường gặp
                           </a>
                         </li>
                         <li>
                           <a href="#" title="Payment">
-                            Payment
+                            Phương thức thanh toán
                           </a>
                         </li>
                         <li>
                           <a href="#" title="Shipment">
-                            Shipment
+                            Phương thức vận chuyển
                           </a>
                         </li>
                         <li>
                           <a href="#" title="Where is my order?">
-                            Where is my order?
+                            Giỏ hàng của tôi
                           </a>
                         </li>
                         <li>
                           <a href="#" title="Return policy">
-                            Return policy
+                            Giấy phép
                           </a>
                         </li>
                       </ul>
@@ -84,36 +84,36 @@ class Footer extends Component {
                   </div>
                   <div className="col-md-3 col-sm-6">
                     <div className="footer-column">
-                      <h4>Style Advisor</h4>
+                      <h4>Dành cho bạn</h4>
                       <ul className="links">
                         <li>
                           <a href="login.html" title="Your Account">
-                            Your Account
+                            Tài khoản của bạn
                           </a>
                         </li>
                         <li>
                           <a href="#" title="Information">
-                            Information
+                            Thông tin
                           </a>
                         </li>
                         <li>
                           <a href="#" title="Addresses">
-                            Addresses
+                            Địa chỉ
                           </a>
                         </li>
                         <li>
                           <a href="#" title="Addresses">
-                            Discount
+                            Khuyến mãi
                           </a>
                         </li>
                         <li>
                           <a href="#" title="Orders History">
-                            Orders History
+                            Lịch sử mua hàng
                           </a>
                         </li>
                         <li>
                           <a href="#" title="Order Tracking">
-                            Order Tracking
+                            Theo dõi đơn hàng
                           </a>
                         </li>
                       </ul>
@@ -121,36 +121,36 @@ class Footer extends Component {
                   </div>
                   <div className="col-md-3 col-sm-6">
                     <div className="footer-column">
-                      <h4>Information</h4>
+                      <h4>Thông tin</h4>
                       <ul className="links">
                         <li>
                           <a href="sitemap.html" title="Site Map">
-                            Site Map
+                            Bản đồ trang
                           </a>
                         </li>
                         <li>
                           <a href="#" title="Search Terms">
-                            Search Terms
+                            Từ khóa tìm kiếm
                           </a>
                         </li>
                         <li>
                           <a href="#" title="Advanced Search">
-                            Advanced Search
+                            Tìm kiếm nâng cao
                           </a>
                         </li>
                         <li>
                           <a href="about_us.html" title="About Us">
-                            About Us
+                            Về chúng tôi
                           </a>
                         </li>
                         <li>
                           <a href="contact_us.html" title="Contact Us">
-                            Contact Us
+                            Liên hệ với chúng tôi
                           </a>
                         </li>
                         <li>
                           <a href="#" title="Suppliers">
-                            Suppliers
+                            Nhà cung cấp
                           </a>
                         </li>
                       </ul>
@@ -158,7 +158,7 @@ class Footer extends Component {
                   </div>
                   <div className="col-md-3 col-sm-6">
                     <div className="footer-column">
-                      <h4>Contact Us</h4>
+                      <h4>Liên vệ với chúng tôi</h4>
                       <div className="contacts-info">
                         <address>
                           <i className="add-icon"></i>ThemesGround, 789 Main rd,
