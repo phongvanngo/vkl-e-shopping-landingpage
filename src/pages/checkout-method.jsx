@@ -80,13 +80,13 @@ class CheckoutMethod extends Component {
                               onClick="checkout.setMethod();"
                             >
                               <span>
-                                <span>Continue</span>
+                                <span>Tiếp tục</span>
                               </span>
                             </button>
                           </div>
                         </div>
                         <div className="col-2">
-                          <h3>Login</h3>
+                          <h3>Đăng nhập</h3>
                           <form id="login-form" action="" method="post">
                             <fieldset>
                               <input
@@ -94,13 +94,13 @@ class CheckoutMethod extends Component {
                                 type="hidden"
                                 value="EPYwQxF6xoWcjLUr"
                               />
-                              <h4>Already registered?</h4>
-                              <p>Please log in below:</p>
+                              <h4>Bạn đã có tài khoản?</h4>
+                              <p>Vui lòng đăng nhập:</p>
                               <ul className="form-list">
                                 <li>
                                   <div className="input-box">
                                     <label for="login-email">
-                                      Email Address
+                                      Địa chỉ Email
                                       <em className="required">*</em>
                                     </label>
                                     <br />
@@ -116,7 +116,7 @@ class CheckoutMethod extends Component {
                                 <li>
                                   <div className="input-box">
                                     <label for="login-password">
-                                      Password<em className="required">*</em>
+                                      Mật khẩu<em className="required">*</em>
                                     </label>
                                     <br />
                                     <input
@@ -136,18 +136,18 @@ class CheckoutMethod extends Component {
                             </fieldset>
                           </form>
                           <div className="buttons-set">
-                            <p className="required">* Required Fields</p>
+                            <p className="required">* Bắt buộc</p>
                             <button
                               type="submit"
                               className="button login"
                               onClick="onepageLogin(this)"
                             >
                               <span>
-                                <span>Login</span>
+                                <span>Đăng nhập</span>
                               </span>
                             </button>
                             <a href="#" className="f-right">
-                              Forgot your password?
+                              Quên mật khẩu?
                             </a>{" "}
                           </div>
                         </div>
@@ -158,7 +158,7 @@ class CheckoutMethod extends Component {
                     <div className="step-title">
                       {" "}
                       <span className="number">2</span>
-                      <h3 className="one_page_heading"> Billing Information</h3>
+                      <h3 className="one_page_heading"> Thông tin đơn hàng</h3>
                     </div>
                     <div
                       id="checkout-step-billing"
@@ -181,7 +181,7 @@ class CheckoutMethod extends Component {
                                     <div className="customer-name">
                                       <div className="input-box name-firstname">
                                         <label for="billing:firstname">
-                                          First Name
+                                          Tên
                                           <span className="required">*</span>
                                         </label>
                                         <div className="input-box1">
@@ -198,7 +198,7 @@ class CheckoutMethod extends Component {
                                       </div>
                                       <div className="input-box name-lastname">
                                         <label for="billing:lastname">
-                                          Last Name
+                                          Họ
                                           <span className="required">*</span>
                                         </label>
                                         <div className="input-box1">
@@ -218,7 +218,7 @@ class CheckoutMethod extends Component {
                                   <li className="fields">
                                     <div className="input-box">
                                       <label for="billing:company">
-                                        Company
+                                        Công ty
                                       </label>
                                       <input
                                         type="text"
@@ -231,7 +231,7 @@ class CheckoutMethod extends Component {
                                     </div>
                                     <div className="input-box">
                                       <label for="billing:email">
-                                        Email Address
+                                        Địa chỉ Email
                                         <em className="required">*</em>
                                       </label>
                                       <input
@@ -246,7 +246,7 @@ class CheckoutMethod extends Component {
                                   </li>
                                   <li className="wide">
                                     <label for="billing:street1">
-                                      Address<em className="required">*</em>
+                                      Địa chỉ<em className="required">*</em>
                                     </label>
                                     <br />
                                     <input
@@ -271,7 +271,7 @@ class CheckoutMethod extends Component {
                                   <li className="fields">
                                     <div className="input-box">
                                       <label for="billing:city">
-                                        City<em className="required">*</em>
+                                        Thành phố<em className="required">*</em>
                                       </label>
                                       <input
                                         type="text"
@@ -284,7 +284,7 @@ class CheckoutMethod extends Component {
                                     </div>
                                     <div className="field">
                                       <label for="billing:region_id">
-                                        State/Province
+                                        Tỉnh/Bang
                                       </label>
                                       <br />
                                       <div className="input-box">
@@ -296,8 +296,7 @@ class CheckoutMethod extends Component {
                                           defaultvalue=""
                                         >
                                           <option value="">
-                                            Please select region, state or
-                                            province
+                                            Vui lòng chọn
                                           </option>
                                           <option value="1" title="Alabama">
                                             Alabama
@@ -596,7 +595,7 @@ class CheckoutMethod extends Component {
                                     </div>
                                     <div className="input-box">
                                       <label for="billing:country_id">
-                                        Country<em className="required">*</em>
+                                        Quốc gia<em className="required">*</em>
                                       </label>
                                       <select
                                         name="billing[country_id]"
@@ -964,7 +963,7 @@ class CheckoutMethod extends Component {
                                   <li className="fields">
                                     <div className="input-box">
                                       <label for="billing:telephone">
-                                        Telephone<em className="required">*</em>
+                                        Địa thoại<em className="required">*</em>
                                       </label>
                                       <input
                                         type="text"
@@ -993,7 +992,7 @@ class CheckoutMethod extends Component {
                                   >
                                     <div className="input-box">
                                       <label for="billing:customer_password">
-                                        Password<em className="required">*</em>
+                                        Mật khẩu<em className="required">*</em>
                                       </label>
                                       <input
                                         type="password"
@@ -1005,7 +1004,7 @@ class CheckoutMethod extends Component {
                                     </div>
                                     <div className="input-box">
                                       <label for="billing:confirm_password">
-                                        Confirm Password
+                                        Xác nhận mật khẩu
                                         <em className="required">*</em>
                                       </label>
                                       <input
@@ -1104,7 +1103,7 @@ class CheckoutMethod extends Component {
                               className="button continue"
                               onClick="billing.save()"
                             >
-                              <span>Continue</span>
+                              <span>Tiếp tục</span>
                             </button>
                             <span
                               className="please-wait"
@@ -1946,7 +1945,7 @@ class CheckoutMethod extends Component {
                     <div className="step-title">
                       {" "}
                       <span className="number">4</span>
-                      <h3 className="one_page_heading"> Shipping Method</h3>
+                      <h3 className="one_page_heading"> Phương thức vân chuyển</h3>
                     </div>
                     <div
                       id="checkout-step-shipping_method"
@@ -1972,7 +1971,7 @@ class CheckoutMethod extends Component {
                             className="button continue"
                             onClick="shippingMethod.save()"
                           >
-                            <span>Continue</span>
+                            <span>Tiếp tục</span>
                           </button>
                           <a href="#" onClick="checkout.back(); return false;">
                             <small>« </small>Back
@@ -1999,7 +1998,7 @@ class CheckoutMethod extends Component {
                     <div className="step-title">
                       {" "}
                       <span className="number">5</span>
-                      <h3 className="one_page_heading"> Payment Information</h3>
+                      <h3 className="one_page_heading"> Phương thức thanh toán</h3>
                     </div>
                     <div
                       id="checkout-step-payment"
@@ -2040,7 +2039,7 @@ class CheckoutMethod extends Component {
                           className="button continue"
                           onClick="payment.save()"
                         >
-                          <span>Continue</span>
+                          <span>Tiếp tục</span>
                         </button>
                         <a href="#" onClick="checkout.back(); return false;">
                           <small>« </small>Back
