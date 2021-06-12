@@ -74,7 +74,7 @@ export default function ListProductInCart() {
                 onClick=""
               >
                 <span>
-                  <span>Continue Shopping</span>
+                  <span>Tiếp tục mua sắm</span>
                 </span>
               </button>
               <button
@@ -85,7 +85,7 @@ export default function ListProductInCart() {
                 className="button btn-update"
               >
                 <span>
-                  <span>Update Cart</span>
+                  <span>Làm mới giỏ hàng</span>
                 </span>
               </button>
               <button
@@ -97,7 +97,7 @@ export default function ListProductInCart() {
                 id="empty_cart_button"
               >
                 <span>
-                  <span>Clear Cart</span>
+                  <span>Xóa tất cả</span>
                 </span>
               </button>
             </td>

@@ -18,7 +18,7 @@ export default function ShoppingCart() {
           <div className="row">
             <div className="col-xs-12">
               <div className="page-title">
-                <h2>Shopping Cart</h2>
+                <h2>Giỏ hàng của bạn</h2>
               </div>
             </div>
           </div>
