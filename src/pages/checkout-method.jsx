@@ -14,7 +14,7 @@ class CheckoutMethod extends Component {
             <div className="row">
               <div className="col-xs-12">
                 <div className="page-title">
-                  <h2>Checkout</h2>
+                  <h2>Thanh toán</h2>
                 </div>
               </div>
             </div>
@@ -34,7 +34,7 @@ class CheckoutMethod extends Component {
                     <div className="step-title">
                       {" "}
                       <span className="number">1</span>
-                      <h3 className="one_page_heading"> Checkout Method</h3>
+                      <h3 className="one_page_heading"> Phương thức thanh toán</h3>
                     </div>
                     <div id="checkout-step-login" className="step a-item">
                       <div className="col2-set">
