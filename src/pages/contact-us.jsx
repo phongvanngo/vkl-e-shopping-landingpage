@@ -14,7 +14,7 @@ class ContactUs extends Component {
             <div className="row">
               <div className="col-xs-12">
                 <div className="page-title">
-                  <h2>Contact Us</h2>
+                  <h2>Liên hệ với chúng tôi</h2>
                 </div>
               </div>
             </div>
@@ -40,7 +40,7 @@ class ContactUs extends Component {
                                 <div className="customer-name">
                                   <div className="input-box name-firstname">
                                     <label for="name">
-                                      <em className="required">*</em>Name
+                                      <em className="required">*</em>Tên của bạn
                                     </label>
                                     <br />
                                     <input
@@ -54,7 +54,7 @@ class ContactUs extends Component {
                                   </div>
                                   <div className="input-box name-firstname">
                                     <label for="email">
-                                      <em className="required">*</em>Email
+                                      <em className="required">*</em>Địa chỉ email
                                     </label>
                                     <br />
                                     <input
@@ -69,7 +69,7 @@ class ContactUs extends Component {
                                 </div>
                               </li>
                               <li>
-                                <label for="telephone">Telephone</label>
+                                <label for="telephone">Điện thoại</label>
                                 <br />
                                 <input
                                   name="telephone"
@@ -82,7 +82,7 @@ class ContactUs extends Component {
                               </li>
                               <li>
                                 <label for="comment">
-                                  <em className="required">*</em>Comment
+                                  <em className="required">*</em>Nội dung
                                 </label>
                                 <br />
                                 <textarea
@@ -114,7 +114,7 @@ class ContactUs extends Component {
                             className="button submit"
                           >
                             <span>
-                              <span>Submit</span>
+                              <span>Gửi</span>
                             </span>
                           </button>
                         </div>

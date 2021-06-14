@@ -18,7 +18,7 @@ class Login extends Component {
                 <input name="form_key" type="hidden" value="EPYwQxF6xoWcjLUr" />
                 <fieldset className="col2-set">
                   <div className="col-1 new-users">
-                    <strong>New Customers</strong>
+                    <strong>Khách hàng mới</strong>
                     <div className="content">
                       <p>
                         By creating an account with our store, you will be able
@@ -34,20 +34,20 @@ class Login extends Component {
                           onClick=""
                         >
                           <span>
-                            <span>Create an Account</span>
+                            <span>Tạo tài khoản</span>
                           </span>
                         </button>
                       </div>
                     </div>
                   </div>
                   <div className="col-2 registered-users">
-                    <strong>Registered Customers</strong>
+                    <strong>Bạn đã có tài khoản?</strong>
                     <div className="content">
-                      <p>If you have an account with us, please log in.</p>
+                      <p>Nếu bạn đã có tài khoản, hãy đăng nhập!</p>
                       <ul className="form-list">
                         <li>
                           <label for="email">
-                            Email Address<em className="required">*</em>
+                            Địa chỉ email<em className="required">*</em>
                           </label>
                           <div className="input-box">
                             <input
@@ -62,7 +62,7 @@ class Login extends Component {
                         </li>
                         <li>
                           <label for="pass">
-                            Password<em className="required">*</em>
+                            Mật khẩu<em className="required">*</em>
                           </label>
                           <div className="input-box">
                             <input
@@ -77,7 +77,7 @@ class Login extends Component {
                       </ul>
                       <div className="remember-me-popup">
                         <div className="remember-me-popup-head">
-                          <h3 id="text2">What's this?</h3>
+                          <h3 id="text2">Đây là gì?</h3>
                           <Link
                             to={" "}
                             className="remember-me-popup-close"
@@ -101,7 +101,7 @@ class Login extends Component {
                               onClick="
             showDiv()"
                             >
-                              <span>Close</span>
+                              <span>Đóng</span>
                             </Link>
                           </div>
                         </div>
@@ -117,11 +117,11 @@ class Login extends Component {
                           name="send"
                           id="send2"
                         >
-                          <span>Login</span>
+                          <span>Đăng nhập</span>
                         </button>
 
                         <Link to={" "} className="forgot-word">
-                          Forgot Your Password?
+                          Quên mật khẩu?
                         </Link>
                       </div>
                       {/* <!--buttons-set--> */}

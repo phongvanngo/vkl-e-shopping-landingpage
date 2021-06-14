@@ -14,7 +14,7 @@ class About extends Component {
             <div className="row">
               <div className="col-xs-12">
                 <div className="page-title">
-                  <h2>About Us</h2>
+                  <h2>Về chúng tôi</h2>
                 </div>
               </div>
             </div>
