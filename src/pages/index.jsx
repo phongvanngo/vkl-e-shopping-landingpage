@@ -89,7 +89,7 @@ export default function Index() {
                           <div className="item-img">
                             <div className="item-img-info">
                               <Link
-                                to={"product-details"}
+                                to={`product-details/${item.id}`}
                                 title="Fresh Organic Mustard Leaves "
                                 className="product-image"
                               >
