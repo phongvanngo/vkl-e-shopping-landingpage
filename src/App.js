@@ -43,7 +43,7 @@ export default function App() {
         <Route exact path="/product" component={ProductPage} />
         <Route path="/product/:id" component={ProductPage} />
         <Route
-          path="/product-details/:productInfo"
+          path="/product-details/:id"
           component={ProductDetails}
         />
         <Route path="/about-us" component={About} />
