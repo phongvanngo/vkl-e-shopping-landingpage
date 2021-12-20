@@ -8,15 +8,17 @@ import BrandCarousel from '../element/brand-slider-carousel'
 import TestimonialCarousel from '../element/testimonial-carousel'
 import SlideShow from './component/homepage.slideshow'
 import TopCategorySlider from './component/homepage.topCategorySlider'
-import { useDispatch } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import { fetchListCategory } from '../app/redux/categorySlice'
+import { fetchListProduct } from '../app/redux/productSlice'
 
 export default function Index() {
   const dispatch = useDispatch()
+  var productList = useSelector((state) => state.product.listProduct || [])
   useEffect(() => {
     window.sliderr()
     window.commonjs()
-    dispatch(fetchListCategory({}))
+    dispatch(fetchListProduct({}))
   }, [])
   return (
     <>
@@ -79,7 +81,10 @@ export default function Index() {
                   <div className='countbox_1 timer-grid'></div>
                 </div>
                 <ul className='products-grid'>
-                  <li className='item col-lg-3 col-md-3 col-sm-3 col-xs-6'>
+                  
+                  {
+                    productList.map((item, index) => (
+                      <li className='item col-lg-3 col-md-3 col-sm-3 col-xs-6'>
                     <div className='item-inner'>
                       <div className='item-img'>
                         <div className='item-img-info'>
@@ -163,256 +168,9 @@ export default function Index() {
                       </div>
                     </div>
                   </li>
-                  <li className='item col-lg-3 col-md-3 col-sm-3 col-xs-6'>
-                    <div className='item-inner'>
-                      <div className='item-img'>
-                        <div className='item-img-info'>
-                          <Link
-                            to={'product-details'}
-                            title='Fresh Organic Mustard Leaves '
-                            className='product-image'
-                          >
-                            <img
-                              src='products-/assets/img/p12.jpg'
-                              alt='Fresh Organic Mustard Leaves '
-                            />
-                          </Link>
-                          <div className='item-box-hover'>
-                            <div className='box-inner'>
-                              <div className='product-detail-bnt'>
-                                <Link to={' '} className='button detail-bnt'>
-                                  <span>Quick View</span>
-                                </Link>
-                              </div>
-                              <div className='actions'>
-                                <span className='add-to-links'>
-                                  <Link
-                                    to={' '}
-                                    className='link-wishlist'
-                                    title='Add to Wishlist'
-                                  >
-                                    <span>Add to Wishlist</span>
-                                  </Link>{' '}
-                                  <Link
-                                    to={' '}
-                                    className='link-compare add_to_compare'
-                                    title='Add to Compare'
-                                  >
-                                    <span>Add to Compare</span>
-                                  </Link>
-                                </span>{' '}
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div className='add_cart'>
-                          <button className='button btn-cart' type='button'>
-                            <span>Add to Cart</span>
-                          </button>
-                        </div>
-                      </div>
-                      <div className='item-info'>
-                        <div className='info-inner'>
-                          <div className='item-title'>
-                            <Link
-                              to={'product-details'}
-                              title='Fresh Organic Mustard Leaves '
-                            >
-                              Fresh Organic Mustard Leaves{' '}
-                            </Link>{' '}
-                          </div>
-                          <div className='item-content'>
-                            <div className='rating'>
-                              <div className='ratings'>
-                                <div className='rating-box'>
-                                  <div className='rating'></div>
-                                </div>
-                                <p className='rating-links'>
-                                  <Link to={' '}>1 Review(s)</Link>{' '}
-                                  <span className='separator'>|</span>{' '}
-                                  <Link to={' '}>Add Review</Link>{' '}
-                                </p>
-                              </div>
-                            </div>
-                            <div className='item-price'>
-                              <div className='price-box'>
-                                <span className='regular-price'>
-                                  <span className='price'>$125.00</span>
-                                </span>{' '}
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li className='item col-lg-3 col-md-3 col-sm-3 col-xs-6'>
-                    <div className='item-inner'>
-                      <div className='item-img'>
-                        <div className='item-img-info'>
-                          <Link
-                            to={'product-details'}
-                            title='Fresh Organic Mustard Leaves '
-                            className='product-image'
-                          >
-                            <img
-                              src='products-/assets/img/p21.jpg'
-                              alt='Fresh Organic Mustard Leaves '
-                            />
-                          </Link>
-                          <div className='item-box-hover'>
-                            <div className='box-inner'>
-                              <div className='product-detail-bnt'>
-                                <Link to={' '} className='button detail-bnt'>
-                                  <span>Quick View</span>
-                                </Link>
-                              </div>
-                              <div className='actions'>
-                                <span className='add-to-links'>
-                                  <Link
-                                    to={' '}
-                                    className='link-wishlist'
-                                    title='Add to Wishlist'
-                                  >
-                                    <span>Add to Wishlist</span>
-                                  </Link>{' '}
-                                  <Link
-                                    to={' '}
-                                    className='link-compare add_to_compare'
-                                    title='Add to Compare'
-                                  >
-                                    <span>Add to Compare</span>
-                                  </Link>
-                                </span>{' '}
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div className='add_cart'>
-                          <button className='button btn-cart' type='button'>
-                            <span>Add to Cart</span>
-                          </button>
-                        </div>
-                      </div>
-                      <div className='item-info'>
-                        <div className='info-inner'>
-                          <div className='item-title'>
-                            <Link
-                              to={'product-details'}
-                              title='Fresh Organic Mustard Leaves '
-                            >
-                              Fresh Organic Mustard Leaves{' '}
-                            </Link>{' '}
-                          </div>
-                          <div className='item-content'>
-                            <div className='rating'>
-                              <div className='ratings'>
-                                <div className='rating-box'>
-                                  <div className='rating'></div>
-                                </div>
-                                <p className='rating-links'>
-                                  <Link to={' '}>1 Review(s)</Link>{' '}
-                                  <span className='separator'>|</span>{' '}
-                                  <Link to={' '}>Add Review</Link>{' '}
-                                </p>
-                              </div>
-                            </div>
-                            <div className='item-price'>
-                              <div className='price-box'>
-                                <span className='regular-price'>
-                                  <span className='price'>$125.00</span>
-                                </span>{' '}
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li className='item col-lg-3 col-md-3 col-sm-3 col-xs-6'>
-                    <div className='item-inner'>
-                      <div className='item-img'>
-                        <div className='item-img-info'>
-                          <Link
-                            to={'product-details'}
-                            title='Fresh Organic Mustard Leaves '
-                            className='product-image'
-                          >
-                            <img
-                              src='products-/assets/img/p3.jpg'
-                              alt='Fresh Organic Mustard Leaves '
-                            />
-                          </Link>
-                          <div className='sale-label sale-top-right'>-40%</div>
-                          <div className='item-box-hover'>
-                            <div className='box-inner'>
-                              <div className='product-detail-bnt'>
-                                <Link to={' '} className='button detail-bnt'>
-                                  <span>Quick View</span>
-                                </Link>
-                              </div>
-                              <div className='actions'>
-                                <span className='add-to-links'>
-                                  <Link
-                                    to={' '}
-                                    className='link-wishlist'
-                                    title='Add to Wishlist'
-                                  >
-                                    <span>Add to Wishlist</span>
-                                  </Link>{' '}
-                                  <Link
-                                    to={' '}
-                                    className='link-compare add_to_compare'
-                                    title='Add to Compare'
-                                  >
-                                    <span>Add to Compare</span>
-                                  </Link>
-                                </span>{' '}
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div className='add_cart'>
-                          <button className='button btn-cart' type='button'>
-                            <span>Add to Cart</span>
-                          </button>
-                        </div>
-                      </div>
-                      <div className='item-info'>
-                        <div className='info-inner'>
-                          <div className='item-title'>
-                            <Link
-                              to={'product-details'}
-                              title='Fresh Organic Mustard Leaves '
-                            >
-                              Fresh Organic Mustard Leaves{' '}
-                            </Link>{' '}
-                          </div>
-                          <div className='item-content'>
-                            <div className='rating'>
-                              <div className='ratings'>
-                                <div className='rating-box'>
-                                  <div className='rating'></div>
-                                </div>
-                                <p className='rating-links'>
-                                  <Link to={' '}>1 Review(s)</Link>{' '}
-                                  <span className='separator'>|</span>{' '}
-                                  <Link to={' '}>Add Review</Link>{' '}
-                                </p>
-                              </div>
-                            </div>
-                            <div className='item-price'>
-                              <div className='price-box'>
-                                <span className='regular-price'>
-                                  <span className='price'>$125.00</span>
-                                </span>{' '}
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
+                    ))
+                  }
+                  
                 </ul>
               </div>
             </div>
