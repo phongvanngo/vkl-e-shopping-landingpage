@@ -5,17 +5,8 @@ import axiosClient from '../axiosClient'
 
 const productApi = {
   getListProduct: async () => {
-    let response = await fakeApi({
-      // request: loginInfo,
-      response: {
-        status: 200,
-        data: {
-          listProduct: allProducts,
-        },
-      },
-      timeOut: 1000,
-    })
-    return response
+    let respone = await axiosClient.get("/api/products").then(result=>result)
+    return respone
   },
   getProductById: async (productId) => {
     let response = await fakeApi({

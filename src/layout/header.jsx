@@ -173,6 +173,11 @@ export default function Header() {
                             </Link>
                           </li>
                           <li className="level1">
+                            <Link to={"/register"}>
+                              <span>Register page</span>
+                            </Link>
+                          </li>
+                          <li className="level1">
                             <Link to={"/quickview"}>
                               <span>Quick View</span>
                             </Link>

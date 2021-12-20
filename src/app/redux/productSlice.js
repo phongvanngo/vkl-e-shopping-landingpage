@@ -16,7 +16,7 @@ export const fetchListProduct = createAsyncThunk(
     dispatch(startLoading())
     try {
       const response = await productApi.getListProduct()
-      console.log(response)
+      console.log("abc", response)
       switch (response.status) {
         case 200:
           dispatch(stopLoading())
@@ -130,7 +130,7 @@ export const productSlice = createSlice({
       .addCase(fetchListProduct.fulfilled, (state, action) => {
         console.log('action', action.payload)
         if (action.payload === null) return
-        const { listProduct } = action.payload
+        const listProduct  = action.payload
 
         state.listProduct = listProduct
       })

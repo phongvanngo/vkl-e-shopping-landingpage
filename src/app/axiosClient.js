@@ -3,8 +3,7 @@ import queryString from 'query-string'
 // Set up default config for http requests here
 
 const axiosClient = axios.create({
-  baseURL:
-    process.env.NEXT_PUBLIC_API_URL || 'https://19ad-118-69-93-186.ngrok.io/',
+  baseURL: 'http://localhost:5000/',
   headers: {
     'content-type': 'application/json',
   },

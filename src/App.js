@@ -9,6 +9,7 @@ import List from "./pages/list";
 import ProductPage from "./pages/ProductPage";
 import ProductPage2 from "./pages/grid";
 import Login from "./pages/login";
+import Register from "./pages/register";
 import MultipleAddresses from "./pages/multiple-addresses";
 import ProductDetails from "./pages/product-details";
 import ShoppingCart from "./pages/shopping-cart";
@@ -50,6 +51,7 @@ export default function App() {
         <Route path="/blog" component={BlogDetails} />
         <Route path="/list" component={List} />
         <Route path="/login" component={Login} />
+        <Route path="/register" component={Register} />
         <Route path="/multiple-addresses" component={MultipleAddresses} />
         <Route path="/shopping-cart" component={ShoppingCart} />
         <Route path="/wishlist" component={Wishlist} />
