@@ -37,8 +37,9 @@ export default function Index() {
                 <Link to={" "} data-scroll-goto="1">
                   {" "}
                   <img
-                    src="/assets/img/banner-img1.jpg"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOzF1gmctV-axeyH6jNPQP4IF74UMWiLFhlg&usqp=CAU"
                     alt="promotion-banner1"
+                    className="mh-100"
                   />{" "}
                 </Link>{" "}
               </div>
@@ -47,8 +48,9 @@ export default function Index() {
                 <Link to={" "} data-scroll-goto="2">
                   {" "}
                   <img
-                    src="/assets/img/banner-img2.jpg"
+                    src="https://fanboyfactor.com/wp-content/uploads/2017/07/Comic-Books-and-Beyond-banner-600x300.jpg"
                     alt="promotion-banner2"
+                    className="mh-100"
                   />{" "}
                 </Link>{" "}
               </div>
@@ -72,7 +74,6 @@ export default function Index() {
               <div className="ad-info">
                 <h2>Hurry Up!</h2>
                 <h3>Deal of the week</h3>
-                <h4>From our family farm right to your doorstep.</h4>
               </div>
             </div>
             <div className="row">
@@ -82,21 +83,18 @@ export default function Index() {
                 </div>
                 <ul className="products-grid">
                   {productList.map((item, index) => {
-                    console.log(item.image + ".....")
+                    console.log(item.image + ".....");
                     return (
                       <li className="item col-lg-3 col-md-3 col-sm-3 col-xs-6">
                         <div className="item-inner">
                           <div className="item-img">
                             <div className="item-img-info">
                               <Link
-                                to={"product-details"}
+                                to={`/product-details/${item.id}`}
                                 title="Fresh Organic Mustard Leaves "
                                 className="product-image"
                               >
-                                <img
-                                  src={item.image}
-                                  alt="Fresh Organic Mustard Leaves "
-                                />
+                                <img src={item.image} alt={item.name} />
                               </Link>
                               <div className="new-label new-top-left">Hot</div>
                               <div className="item-box-hover">
@@ -140,10 +138,10 @@ export default function Index() {
                             <div className="info-inner">
                               <div className="item-title">
                                 <Link
-                                  to={"product-details"}
+                                  to={`/product-details/${item.id}`}
                                   title="Fresh Organic Mustard Leaves "
                                 >
-                                  Fresh Organic Mustard Leaves{" "}
+                                  {item.name}{" "}
                                 </Link>{" "}
                               </div>
                               <div className="item-content">
@@ -162,7 +160,9 @@ export default function Index() {
                                 <div className="item-price">
                                   <div className="price-box">
                                     <span className="regular-price">
-                                      <span className="price">$125.00</span>
+                                      <span className="price">
+                                        {item.price}
+                                      </span>
                                     </span>{" "}
                                   </div>
                                 </div>

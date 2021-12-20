@@ -15,10 +15,10 @@ export default function SlideShow() {
                   data-transition="random"
                   data-slotamount="7"
                   data-masterspeed="1000"
-                  data-thumb="/assets/img/slide-img1.jpg"
+                  data-thumb="https://assets.penguinrandomhouse.com/wp-content/uploads/2020/06/25201848/Homepage.jpg"
                 >
                   <img
-                    src="/assets/img/slide-img2.jpg"
+                    src="https://assets.penguinrandomhouse.com/wp-content/uploads/2020/06/25201848/Homepage.jpg"
                     data-bgposition="left top"
                     data-bgfit="cover"
                     data-bgrepeat="no-repeat"
@@ -39,7 +39,7 @@ export default function SlideShow() {
                       data-endelementdelay="0.1"
                       style={{ zIndex: "2", whiteSpace: "nowrap" }}
                     >
-                      <span>THỰC PHẨM TƯƠI SẠCH</span>
+
                     </div>
                     <div
                       className="tp-caption LargeTitle sfl  tp-resizeme "
@@ -55,7 +55,7 @@ export default function SlideShow() {
                       data-endelementdelay="0.1"
                       style={{ zIndex: "3", whiteSpace: "nowrap" }}
                     >
-                      Simply <span>delicious</span>
+
                     </div>
                     <div
                       className="tp-caption sfb  tp-resizeme "
@@ -89,7 +89,7 @@ export default function SlideShow() {
                       data-endelementdelay="0.1"
                       style={{ zIndex: "4", whiteSpace: "nowrap" }}
                     >
-                      Chúng tôi cung cấp thực phẩm hữu cơ chất lượng cao
+
                     </div>
                   </div>
                 </li>
@@ -97,10 +97,10 @@ export default function SlideShow() {
                   data-transition="random"
                   data-slotamount="7"
                   data-masterspeed="1000"
-                  data-thumb="/assets/img/slide-img3.jpg"
+                  data-thumb="https://assets.penguinrandomhouse.com/wp-content/uploads/2020/01/03153350/1200x628_smalltown.jpg"
                 >
                   <img
-                    src="/assets/img/slide-img3.jpg"
+                    src="https://assets.penguinrandomhouse.com/wp-content/uploads/2020/01/03153350/1200x628_smalltown.jpg"
                     data-bgposition="left top"
                     data-bgfit="cover"
                     data-bgrepeat="no-repeat"
@@ -121,7 +121,6 @@ export default function SlideShow() {
                       data-endelementdelay="0.1"
                       style={{ zIndex: "2", whiteSpace: "nowrap" }}
                     >
-                      <span>Fresh Look</span>
                     </div>
                     <div
                       className="tp-caption LargeTitle sfl  tp-resizeme "
@@ -137,7 +136,6 @@ export default function SlideShow() {
                       data-endelementdelay="0.1"
                       style={{ zIndex: "3", whiteSpace: "nowrap" }}
                     >
-                      <span>100%</span> Organic
                     </div>
                     <div
                       className="tp-caption sfb  tp-resizeme "
@@ -171,7 +169,6 @@ export default function SlideShow() {
                       data-endelementdelay="0.1"
                       style={{ zIndex: "4", whiteSpace: "nowrap" }}
                     >
-                      Farm Fresh Produce Right to Your Door
                     </div>
                   </div>
                 </li>
