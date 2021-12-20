@@ -14,38 +14,26 @@ import ProductPageHeading from "./component/productPage/PageHeading";
 import { numberWithSpaces } from "../app/myLibrary/utilities";
 import RelatedProduct from "./component/productPage/RelatedProduct";
 import AddToBoxComponent from "./component/productPage/productDetail.AddToBox";
+import axiosClient from './../app/axiosClient';
 
 export default function ProductDetails() {
   const { productInfo } = useParams();
   let info = queryString.parse(productInfo);
-
+  const {id} = useParams()
   const [currentCategory, setCurrentCategory] = useState({});
-  const currentProduct = useSelector((state) => state.product.currentProduct);
-  const listCategory = useSelector((state) => state.category.listCategory);
+  const [currentProduct, setCurrentProduct] = useState({})
 
   const dispatch = useDispatch();
   useEffect(() => {
     window.commonjs();
     window.zoomimg();
-    console.log("product detaild - use effect- info = ", info);
-    if (info === null) return;
-    dispatch(fetchProductById(info.product_id));
-    if (info.category_id === null) {
-      dispatch(fetchListProduct({}));
-    } else {
-      dispatch(fetchListProductByCategory(info.category_id));
-    }
-  }, [productInfo]);
+    axiosClient.get('/api/products?id=' + id).then(res => {
+      console.log("id",info.productInfo)
+      console.log('res',res)
+      setCurrentProduct(res.data);
+    })
+  }, []);
 
-  useEffect(() => {
-    if (listCategory === null) return;
-    let category = listCategory.find(
-      (category) => category.id == info.category_id
-    );
-    if (!category) category = { id: null, name: "Tất cả sản phẩm" };
-    setCurrentCategory(category);
-    console.log("use effect product page: ", category);
-  }, [listCategory]);
 
   console.log("product detail - current Product = ", currentProduct);
 
