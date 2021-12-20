@@ -37,7 +37,7 @@ export default function Index() {
                 <Link to={" "} data-scroll-goto="1">
                   {" "}
                   <img
-                    src="/assets/img/banner-img1.jpg"
+                    src="https://film-book.com/wp-content/uploads/2021/07/american-horror-stories-tv-show-poster-banner-01-700x400-1-287x164.jpg"
                     alt="promotion-banner1"
                   />{" "}
                 </Link>{" "}
@@ -47,7 +47,7 @@ export default function Index() {
                 <Link to={" "} data-scroll-goto="2">
                   {" "}
                   <img
-                    src="/assets/img/banner-img2.jpg"
+                    src="https://fanboyfactor.com/wp-content/uploads/2017/07/Comic-Books-and-Beyond-banner-600x300.jpg"
                     alt="promotion-banner2"
                   />{" "}
                 </Link>{" "}
@@ -82,7 +82,7 @@ export default function Index() {
                 </div>
                 <ul className="products-grid">
                   {productList.map((item, index) => {
-                    console.log(item.image + ".....")
+                    console.log(item.image + ".....");
                     return (
                       <li className="item col-lg-3 col-md-3 col-sm-3 col-xs-6">
                         <div className="item-inner">
@@ -93,10 +93,7 @@ export default function Index() {
                                 title="Fresh Organic Mustard Leaves "
                                 className="product-image"
                               >
-                                <img
-                                  src={item.image}
-                                  alt="Fresh Organic Mustard Leaves "
-                                />
+                                <img src={item.image} alt={item.name} />
                               </Link>
                               <div className="new-label new-top-left">Hot</div>
                               <div className="item-box-hover">
@@ -143,7 +140,7 @@ export default function Index() {
                                   to={"product-details"}
                                   title="Fresh Organic Mustard Leaves "
                                 >
-                                  Fresh Organic Mustard Leaves{" "}
+                                  {item.name}{" "}
                                 </Link>{" "}
                               </div>
                               <div className="item-content">
@@ -162,7 +159,9 @@ export default function Index() {
                                 <div className="item-price">
                                   <div className="price-box">
                                     <span className="regular-price">
-                                      <span className="price">$125.00</span>
+                                      <span className="price">
+                                        {item.price}
+                                      </span>
                                     </span>{" "}
                                   </div>
                                 </div>
