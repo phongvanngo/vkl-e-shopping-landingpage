@@ -6,10 +6,10 @@ import { fetchListCategory } from "./../../app/redux/categorySlice";
 
 export default function TopCategorySlider() {
   const dispatch = useDispatch();
-  const listCategory = useSelector(
-    (state) => state.category.listCategory || []
+  const listProduct = useSelector(
+    (state) => state.product.listProduct || []
   );
-  console.log(listCategory);
+  console.log("listProduct", listProduct);
 
   function CategoryCarousel() {
     useEffect(() => {
@@ -18,7 +18,7 @@ export default function TopCategorySlider() {
     return (
       <div id="top-categories" className="product-flexslider hidden-buttons">
         <div className="slider-items slider-width-col4 products-grid">
-          {listCategory.map((cate, index) => (
+          {listProduct.map((cate, index) => (
             <div className="item" key={index}>
               {" "}
               <Link to={"/product/" + cate.id}>

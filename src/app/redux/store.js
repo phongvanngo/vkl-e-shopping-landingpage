@@ -1,10 +1,10 @@
-import { configureStore } from "@reduxjs/toolkit";
-import loadingReducer from "./loadingSlice";
-import dialogReducer from "./dialogSlice";
-import categoryReducer from "./categorySlice";
-import productReducer from "./productSlice";
-import cartReducer from "./cartSlice";
-import addressReducder from "./addressSlice";
+import { configureStore } from '@reduxjs/toolkit'
+import loadingReducer from './loadingSlice'
+import dialogReducer from './dialogSlice'
+import categoryReducer from './categorySlice'
+import productReducer from './productSlice'
+import cartReducer from './cartSlice'
+import addressReducder from './addressSlice'
 
 export const store = configureStore({
   reducer: {
@@ -15,4 +15,4 @@ export const store = configureStore({
     cart: cartReducer,
     address: addressReducder,
   },
-});
+})

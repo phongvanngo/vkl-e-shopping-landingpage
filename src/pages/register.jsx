@@ -4,16 +4,14 @@ import Header from '../layout/header'
 import Footer from '../layout/footer'
 import axiosClient from '../app/axiosClient'
 
-function Login() {
+function Register() {
   const history = useHistory()
   var [username, setUserName] = useState()
   var [password, setPassWord] = useState()
-  function handleLogin() {
-    var user = { username, password }
-    axiosClient
-      .post('/api/auth/login', user)
-      .then((res) => localStorage.setItem('user', JSON.stringify(res)))
-    history.push('/')
+  function handleRegister() {
+    var user = { email: username, username, password }
+    axiosClient.post('/api/auth/register', user)
+    history.push('/login')
   }
   return (
     <>
@@ -28,14 +26,8 @@ function Login() {
               <input name='form_key' type='hidden' value='EPYwQxF6xoWcjLUr' />
               <fieldset className='col2-set'>
                 <div className='col-1 new-users'>
-                  <strong>New Customers</strong>
+                  <strong>Already Customers</strong>
                   <div className='content'>
-                    <p>
-                      By creating an account with our store, you will be able to
-                      move through the checkout process faster, store multiple
-                      shipping addresses, view and track your orders in your
-                      account and more.
-                    </p>
                     <div className='buttons-set'>
                       <button
                         type='button'
@@ -45,7 +37,7 @@ function Login() {
                       >
                         <span>
                           <span>
-                            <Link to='/register'>Create an account</Link>
+                            <Link to='/login'>Back to Log In</Link>
                           </span>
                         </span>
                       </button>
@@ -90,54 +82,49 @@ function Login() {
                         </div>
                       </li>
                     </ul>
-                    <div className='remember-me-popup'>
-                      <div className='remember-me-popup-head'>
-                        <h3 id='text2'>What's this?</h3>
-                        <Link
-                          to={' '}
-                          className='remember-me-popup-close'
-                          onClick='showDiv()'
-                          title='Close'
-                        >
-                          Close
-                        </Link>
-                      </div>
-                      <div className='remember-me-popup-body'>
-                        <p id='text1'>
-                          Checking "Remember Me" will let you access your
-                          shopping cart on this computer when you are logged out
-                        </p>
-                        <div className='remember-me-popup-close-button a-right'>
+                    {/* <div className='remember-me-popup'>
+                        <div className='remember-me-popup-head'>
+                          <h3 id='text2'>What's this?</h3>
                           <Link
                             to={' '}
-                            className='remember-me-popup-close button'
+                            className='remember-me-popup-close'
+                            onClick='showDiv()'
                             title='Close'
-                            onClick='
-            showDiv()'
                           >
-                            <span>Close</span>
+                            Close
                           </Link>
                         </div>
-                      </div>
-                    </div>
+                        <div className='remember-me-popup-body'>
+                          <p id='text1'>
+                            Checking "Remember Me" will let you access your
+                            shopping cart on this computer when you are logged
+                            out
+                          </p>
+                          <div className='remember-me-popup-close-button a-right'>
+                            <Link
+                              to={' '}
+                              className='remember-me-popup-close button'
+                              title='Close'
+                              onClick='
+            showDiv()'
+                            >
+                              <span>Close</span>
+                            </Link>
+                          </div>
+                        </div>
+                      </div> */}
 
                     <p className='required'>* Required Fields</p>
 
                     <div className='buttons-set'>
                       <button
-                        type='submit'
                         className='button login'
-                        title='Login'
                         name='send'
                         id='send2'
-                        onClick={handleLogin}
+                        onClick={handleRegister}
                       >
-                        <span>Login</span>
+                        <span>Register</span>
                       </button>
-
-                      <Link to={' '} className='forgot-word'>
-                        Forgot Your Password?
-                      </Link>
                     </div>
                     {/* <!--buttons-set--> */}
                   </div>
@@ -205,4 +192,4 @@ function Login() {
   )
 }
 
-export default Login
+export default Register

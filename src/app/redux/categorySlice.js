@@ -16,11 +16,11 @@ export const fetchListCategory = createAsyncThunk(
     dispatch(startLoading());
     try {
       const response = await categoryApi.getListCategory();
-      console.log(response);
+      console.log("response", response);
       switch (response.status) {
         case 200:
           dispatch(stopLoading());
-          return response.data;
+          return response;
         case 401:
           throw new Error("Unauthorize");
         case 400:
