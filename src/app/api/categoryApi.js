@@ -1,20 +1,13 @@
 // import axiosClient from './AxiosClient';
-import { fakeApi } from "./fakeApi";
-import { listCategories } from "./fakeData";
-
+import { fakeApi } from './fakeApi'
+import { listCategories } from './fakeData'
+import axiosClient from '../axiosClient'
 const categoryApi = {
   getListCategory: async () => {
-    let response = await fakeApi({
-      // request: loginInfo,
-      response: {
-        status: 200,
-        data: {
-          listCategory: listCategories,
-        },
-      },
-      timeOut: 1000,
-    });
-    return response;
+    var response = await axiosClient.get('/api/categories').then((result) => {
+      return result
+    })
+    return response
   },
   postCategory: async (category) => {
     let response = await fakeApi({
@@ -26,8 +19,8 @@ const categoryApi = {
         },
       },
       timeOut: 1000,
-    });
-    return response;
+    })
+    return response
   },
   patchCategory: async (category) => {
     let response = await fakeApi({
@@ -37,8 +30,8 @@ const categoryApi = {
         data: {},
       },
       timeOut: 1000,
-    });
-    return response;
+    })
+    return response
   },
   deleteCategory: async (category) => {
     let response = await fakeApi({
@@ -48,9 +41,9 @@ const categoryApi = {
         data: {},
       },
       timeOut: 1000,
-    });
-    return response;
+    })
+    return response
   },
-};
+}
 
-export default categoryApi;
+export default categoryApi

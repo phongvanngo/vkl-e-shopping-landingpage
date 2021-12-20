@@ -1,8 +1,8 @@
 export const listCategories = JSON.parse(`
 [{
     "id": 1,
-    "name": "TRÁI CÂY",
-    "image": "https://i.imgur.com/2Ifh9Z3.jpg"
+    "name": "TÌNH YÊU",
+    "image": "https://www.google.com/imgres?imgurl=https%3A%2F%2Fo.rada.vn%2Fdata%2Fimage%2F2021%2F08%2F11%2FTinh-yeu-thuong.jpg&imgrefurl=https%3A%2F%2Fdownload.vn%2Fnghi-luan-xa-hoi-ve-tinh-yeu-thuong-52978&tbnid=fVZom1f6h8vE_M&vet=12ahUKEwjXpMr9q_H0AhXQx3MBHZfaAucQMygTegUIARDSAQ..i&docid=w9gi0j7VZym59M&w=700&h=367&itg=1&q=tinh%20yeu&ved=2ahUKEwjXpMr9q_H0AhXQx3MBHZfaAucQMygTegUIARDSAQ"
   }, {
     "id": 2,
     "name": "RAU SẠCH",
@@ -44,7 +44,7 @@ export const listCategories = JSON.parse(`
     "name": "QUÀ TẶNG",
     "image": "https://i.imgur.com/O2NGeZv.jpg"
   }]
-`);
+`)
 
 export const allProducts = JSON.parse(`
 [{
@@ -848,4 +848,4 @@ export const allProducts = JSON.parse(`
   "price": 162000,
   "best_seller": false
 }]
-`);
+`)
