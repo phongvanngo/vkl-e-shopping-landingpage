@@ -37,8 +37,9 @@ export default function Index() {
                 <Link to={" "} data-scroll-goto="1">
                   {" "}
                   <img
-                    src="https://film-book.com/wp-content/uploads/2021/07/american-horror-stories-tv-show-poster-banner-01-700x400-1-287x164.jpg"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOzF1gmctV-axeyH6jNPQP4IF74UMWiLFhlg&usqp=CAU"
                     alt="promotion-banner1"
+                    className="mh-100"
                   />{" "}
                 </Link>{" "}
               </div>
@@ -49,6 +50,7 @@ export default function Index() {
                   <img
                     src="https://fanboyfactor.com/wp-content/uploads/2017/07/Comic-Books-and-Beyond-banner-600x300.jpg"
                     alt="promotion-banner2"
+                    className="mh-100"
                   />{" "}
                 </Link>{" "}
               </div>
@@ -72,7 +74,6 @@ export default function Index() {
               <div className="ad-info">
                 <h2>Hurry Up!</h2>
                 <h3>Deal of the week</h3>
-                <h4>From our family farm right to your doorstep.</h4>
               </div>
             </div>
             <div className="row">
@@ -89,7 +90,7 @@ export default function Index() {
                           <div className="item-img">
                             <div className="item-img-info">
                               <Link
-                                to={`product-details/${item.id}`}
+                                to={`/product-details/${item.id}`}
                                 title="Fresh Organic Mustard Leaves "
                                 className="product-image"
                               >
@@ -137,7 +138,7 @@ export default function Index() {
                             <div className="info-inner">
                               <div className="item-title">
                                 <Link
-                                  to={"product-details"}
+                                  to={`/product-details/${item.id}`}
                                   title="Fresh Organic Mustard Leaves "
                                 >
                                   {item.name}{" "}

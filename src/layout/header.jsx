@@ -24,7 +24,7 @@ export default function Header() {
                   <div className="assetBlock">
                     <div id="slideshow">
                       <p>
-                        Special Offers! - Get <span>50%</span> off on vegetables{" "}
+                        Special Offers! - Get <span>50%</span> off on all books{" "}
                       </p>
                       <p>
                         sale <span>40%</span> of on bulk shopping!{" "}
@@ -65,22 +65,6 @@ export default function Header() {
                         </Link>
                       </li>
                       <li className="level0 parent drop-menu">
-                        <Link to={"/product"}>
-                          <span>SẢN PHẨM</span>{" "}
-                        </Link>
-                        {/* <!--sub sub category--> */}
-                        <ul className="level1">
-                          {listCategory.map((cate, index) => (
-                            <li className="level1 first" key={index}>
-                              <Link to={`/product/${cate.id}`}>
-                                <span>{cate.name}</span>
-                              </Link>
-                            </li>
-                          ))}
-                        </ul>
-                      </li>
-
-                      <li className="level0 parent drop-menu">
                         <Link to={" "}>
                           <span>CỬA HÀNG</span>{" "}
                         </Link>
@@ -89,19 +73,6 @@ export default function Header() {
                           <li className="level1 first">
                             <Link to={"/grid"}>
                               <span>Product Grid</span>
-                            </Link>
-                          </li>
-                          <li className="level1 nav-10-2">
-                            {" "}
-                            <Link to={"/list"}>
-                              {" "}
-                              <span>Product List</span>{" "}
-                            </Link>{" "}
-                          </li>
-                          <li className="level1 nav-10-3">
-                            {" "}
-                            <Link to={"/product-details"}>
-                              <span>Product Detail</span>{" "}
                             </Link>
                           </li>
                           <li className="level1 nav-10-4">
@@ -116,12 +87,6 @@ export default function Header() {
                               <span>Checkout</span>
                             </Link>
                           </li>
-                          <li className="level1 nav-10-4">
-                            {" "}
-                            <Link to={"/wishlist"}>
-                              <span>Wishlist</span>{" "}
-                            </Link>{" "}
-                          </li>
                           <li className="level1">
                             {" "}
                             <Link to={"/dashboard"}>
@@ -131,41 +96,15 @@ export default function Header() {
                           </li>
                           <li className="level1">
                             {" "}
-                            <Link to={"/multiple-addresses"}>
-                              {" "}
-                              <span>Multiple Addresses</span>{" "}
-                            </Link>
-                          </li>
-                          <li className="level1">
-                            {" "}
                             <Link to={"/about-us"}>
                               {" "}
                               <span>About us</span>{" "}
                             </Link>
                           </li>
-                          <li className="level1 first parent">
-                            <Link to={"/blog"}>
-                              <span>Blog</span>
-                            </Link>
-                            {/* <!--sub sub category--> */}
-                            <ul className="level2 right-sub">
-                              <li className="level2 nav-2-1-1 first">
-                                <Link to={"/blog-detail"}>
-                                  <span>Blog Detail</span>
-                                </Link>
-                              </li>
-                            </ul>
-                            {/* <!--sub sub category--> */}
-                          </li>
                           <li className="level1">
                             <Link to={"/contact-us"}>
                               <span>Contact us</span>
                             </Link>
-                          </li>
-                          <li className="level1">
-                            <Link to={"/404error"}>
-                              <span>404 Error Page</span>
-                            </Link>{" "}
                           </li>
                           <li className="level1">
                             <Link to={"/login"}>
@@ -175,16 +114,6 @@ export default function Header() {
                           <li className="level1">
                             <Link to={"/register"}>
                               <span>Register page</span>
-                            </Link>
-                          </li>
-                          <li className="level1">
-                            <Link to={"/quickview"}>
-                              <span>Quick View</span>
-                            </Link>
-                          </li>
-                          <li className="level1">
-                            <Link to={"/newsletter"}>
-                              <span>Newsletter</span>
                             </Link>
                           </li>
                         </ul>
